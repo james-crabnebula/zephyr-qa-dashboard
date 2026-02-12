@@ -1,3 +1,14 @@
+---
+title: "macOS Test Report"
+date: 2026-02-12
+category: daily
+tags: [macos, darwin, arm64, automated, 0.1.4-80b9f15]
+author: Q (Automated)
+status: complete
+build_version: 0.1.4-80b9f15
+platform: Darwin-arm64
+---
+
 # macOS Test Report
 
 **Build:** 0.1.4-80b9f15

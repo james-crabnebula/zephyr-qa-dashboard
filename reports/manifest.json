@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T09:25:57.824Z",
-  "total": 16,
+  "generated": "2026-02-12T09:50:40.673Z",
+  "total": 15,
   "categories": [
     "daily",
     "features",
@@ -10,7 +10,7 @@
     "executive"
   ],
   "category_counts": {
-    "daily": 4,
+    "daily": 3,
     "features": 8,
     "bugs": 2,
     "security": 1,
@@ -18,12 +18,12 @@
   },
   "reports": [
     {
-      "id": "daily-2026-02-12-macos-detailed",
+      "id": "daily-macOS-0.1.4-80b9f15-Detailed-Breakdown",
       "title": "macOS Test Report - Detailed Breakdown",
       "category": "daily",
       "date": "2026-02-12",
-      "path": "daily/2026-02-12-macos-detailed.md",
-      "file": "2026-02-12-macos-detailed.md",
+      "path": "daily/macOS-0.1.4-80b9f15-Detailed-Breakdown.md",
+      "file": "macOS-0.1.4-80b9f15-Detailed-Breakdown.md",
       "tags": [
         "macos",
         "darwin",
@@ -37,20 +37,12 @@
       "build_version": "0.1.4-80b9f15"
     },
     {
-      "id": "daily-2026-02-12-macos-report",
-      "title": "macOS Test Report",
-      "category": "daily",
-      "date": "2026-02-12",
-      "path": "daily/2026-02-12-macos-report.md",
-      "file": "2026-02-12-macos-report.md"
-    },
-    {
-      "id": "daily-2026-02-12-macos-summary",
+      "id": "daily-macOS-0.1.4-80b9f15-Executive-Summary",
       "title": "macOS Test Report - Executive Summary",
       "category": "daily",
       "date": "2026-02-12",
-      "path": "daily/2026-02-12-macos-summary.md",
-      "file": "2026-02-12-macos-summary.md",
+      "path": "daily/macOS-0.1.4-80b9f15-Executive-Summary.md",
+      "file": "macOS-0.1.4-80b9f15-Executive-Summary.md",
       "tags": [
         "macos",
         "darwin",
@@ -63,12 +55,12 @@
       "build_version": "0.1.4-80b9f15"
     },
     {
-      "id": "daily-2026-02-12-macos",
-      "title": "macOS Test Report - Executive Summary",
+      "id": "daily-macOS-Test-Report",
+      "title": "macOS Test Report",
       "category": "daily",
       "date": "2026-02-12",
-      "path": "daily/2026-02-12-macos.md",
-      "file": "2026-02-12-macos.md",
+      "path": "daily/macOS-Test-Report.md",
+      "file": "macOS-Test-Report.md",
       "tags": [
         "macos",
         "darwin",
@@ -93,7 +85,8 @@
         "beast"
       ],
       "author": "Beast Infrastructure",
-      "status": "resolved"
+      "status": "resolved",
+      "build_version": ""
     },
     {
       "id": "security-2026-02-10-assessment",
