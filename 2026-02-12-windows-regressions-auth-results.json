@@ -1,0 +1,32 @@
+{
+  "platform": "Windows-x64",
+  "version": "0.1.4-80b9f15",
+  "suite": "regressions",
+  "date": "2026-02-12",
+  "authState": "authenticated",
+  "note": "Excluded auth.regression.spec.js and security.regression.spec.js (they log out)",
+  "summary": {
+    "total": 28,
+    "passed": 8,
+    "failed": 13,
+    "skipped": 7
+  },
+  "failures": [
+    { "id": "CHAT-11", "name": "messages persist after page reload", "severity": "CRITICAL", "file": "chat.regression.spec.js" },
+    { "id": "SET-08", "name": "Package Manager Browse tab does not show registry error", "severity": "HIGH", "file": "settings.regression.spec.js" },
+    { "id": "SET-09", "name": "GitHub token settings link does not throw ACL error", "severity": "HIGH", "file": "settings.regression.spec.js" },
+    { "id": "SET-06", "name": "Billing section has real content or clear unavailable state", "severity": "MEDIUM", "file": "settings.regression.spec.js" },
+    { "id": "SPEC-04", "name": "displayed specialist counts match actual rendered items", "severity": "MEDIUM", "file": "specialists.regression.spec.js" },
+    { "id": "TASK-03", "name": "task board does not show unexpected pre-existing tasks", "severity": "MEDIUM", "file": "tasks.regression.spec.js" },
+    { "id": "WORK-06", "name": "Execute button provides feedback when clicked", "severity": "MEDIUM", "file": "workflows.regression.spec.js" },
+    { "id": "CHAT-03", "name": "chat input has meaningful placeholder and send button", "severity": "LOW", "file": "chat.regression.spec.js" },
+    { "id": "INST-05", "name": "sidebar collapse toggle responds to clicks", "severity": "LOW", "file": "installation.regression.spec.js" },
+    { "id": "SET-02", "name": "Settings has expected number of sections", "severity": "LOW", "file": "settings.regression.spec.js" },
+    { "id": "WORK-02", "name": "Quick Start step 2 matches actual interaction method", "severity": "LOW", "file": "workflows.regression.spec.js" },
+    { "id": "WORK-03", "name": "double-click on palette item creates exactly one node", "severity": "LOW", "file": "workflows.regression.spec.js" },
+    { "id": "WORK-04", "name": "refresh success toast is fully opaque", "severity": "LOW", "file": "workflows.regression.spec.js" }
+  ],
+  "manualBugs": [
+    { "id": "AUTH-DIALOG", "name": "Auth0 dialog doesn't auto-close after login", "severity": "MEDIUM", "screenshot": "auth-dialog-not-closing-windows.png" }
+  ]
+}

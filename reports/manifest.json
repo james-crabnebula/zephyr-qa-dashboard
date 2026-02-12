@@ -1,24 +1,26 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T14:10:26.374Z",
-  "total": 29,
+  "generated": "2026-02-12T14:32:35.617Z",
+  "total": 30,
   "categories": [
-    "daily",
     "macos-feb12",
     "windows-feb12",
     "linux-feb12",
     "ui-ux",
+    "a11y",
+    "daily",
     "features",
     "bugs",
     "security",
     "executive"
   ],
   "category_counts": {
-    "daily": 4,
     "macos-feb12": 10,
     "windows-feb12": 1,
     "linux-feb12": 1,
     "ui-ux": 1,
+    "a11y": 1,
+    "daily": 4,
     "features": 8,
     "bugs": 2,
     "security": 1,
@@ -41,42 +43,6 @@
         "executive-summary"
       ],
       "author": "Q (Automated)",
-      "status": "complete",
-      "build_version": "0.1.4-80b9f15"
-    },
-    {
-      "id": "linux-feb12-00-linux-differences",
-      "title": "Linux 12 Feb — Platform Differences",
-      "category": "linux-feb12",
-      "date": "2026-02-12",
-      "path": "linux-feb12/00-linux-differences.md",
-      "file": "00-linux-differences.md",
-      "tags": [
-        "linux",
-        "ubuntu",
-        "automated",
-        "0.1.4-80b9f15",
-        "differences"
-      ],
-      "author": "Q (Automated)",
-      "status": "complete",
-      "build_version": "0.1.4-80b9f15"
-    },
-    {
-      "id": "windows-feb12-00-windows-differences",
-      "title": "Windows 12 Feb — Platform Differences",
-      "category": "windows-feb12",
-      "date": "2026-02-12",
-      "path": "windows-feb12/00-windows-differences.md",
-      "file": "00-windows-differences.md",
-      "tags": [
-        "windows",
-        "win11",
-        "automated",
-        "0.1.4-80b9f15",
-        "differences"
-      ],
-      "author": "Q (Automated) + James (Manual)",
       "status": "complete",
       "build_version": "0.1.4-80b9f15"
     },
@@ -252,6 +218,101 @@
       "build_version": "0.1.4-80b9f15"
     },
     {
+      "id": "windows-feb12-00-windows-differences",
+      "title": "Windows 12 Feb — Platform Differences",
+      "category": "windows-feb12",
+      "date": "2026-02-12",
+      "path": "windows-feb12/00-windows-differences.md",
+      "file": "00-windows-differences.md",
+      "tags": [
+        "windows",
+        "win11",
+        "automated",
+        "0.1.4-80b9f15",
+        "differences"
+      ],
+      "author": "Q (Automated) + James (Manual)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "linux-feb12-00-linux-differences",
+      "title": "Linux 12 Feb — Platform Differences",
+      "category": "linux-feb12",
+      "date": "2026-02-12",
+      "path": "linux-feb12/00-linux-differences.md",
+      "file": "00-linux-differences.md",
+      "tags": [
+        "linux",
+        "ubuntu",
+        "automated",
+        "0.1.4-80b9f15",
+        "differences"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "ui-ux-UI-UX-FINDINGS-CONSOLIDATED",
+      "title": "UI/UX Manual Testing - Consolidated Report",
+      "category": "ui-ux",
+      "date": "2026-02-12",
+      "path": "ui-ux/UI-UX-FINDINGS-CONSOLIDATED.md",
+      "file": "UI-UX-FINDINGS-CONSOLIDATED.md",
+      "tags": [
+        "ui",
+        "ux",
+        "manual",
+        "a11y",
+        "wcag",
+        "macos",
+        "windows",
+        "linux",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Alex Lohr, Cristián Vogel, Robin Van Boven",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "a11y-ACCESSIBILITY-AUDIT",
+      "title": "Accessibility Audit (WCAG 2.1 AA)",
+      "category": "a11y",
+      "date": "2026-02-12",
+      "path": "a11y/ACCESSIBILITY-AUDIT.md",
+      "file": "ACCESSIBILITY-AUDIT.md",
+      "tags": [
+        "accessibility",
+        "wcag",
+        "a11y",
+        "axe-core",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "daily-MANUAL-VS-E2E-DIFF",
+      "title": "Manual vs E2E — Coverage Diff",
+      "category": "daily",
+      "date": "2026-02-12",
+      "path": "daily/MANUAL-VS-E2E-DIFF.md",
+      "file": "MANUAL-VS-E2E-DIFF.md",
+      "tags": [
+        "analysis",
+        "coverage",
+        "manual",
+        "e2e",
+        "gaps",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Q (Analysis)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
       "id": "daily-macOS-0.1.4-80b9f15-Detailed-Breakdown",
       "title": "macOS Test Report - Detailed Breakdown",
       "category": "daily",
@@ -307,45 +368,19 @@
       "build_version": "0.1.4-80b9f15"
     },
     {
-      "id": "daily-MANUAL-VS-E2E-DIFF",
-      "title": "Manual vs E2E — Coverage Diff",
-      "category": "daily",
-      "date": "2026-02-12",
-      "path": "daily/MANUAL-VS-E2E-DIFF.md",
-      "file": "MANUAL-VS-E2E-DIFF.md",
+      "id": "bugs-BEAST-2026-02-10-001-container-resource-leak",
+      "title": "Container Resource Leak",
+      "category": "bugs",
+      "date": "2026-02-10",
+      "path": "bugs/BEAST-2026-02-10-001-container-resource-leak.md",
+      "file": "BEAST-2026-02-10-001-container-resource-leak.md",
       "tags": [
-        "analysis",
-        "coverage",
-        "manual",
-        "e2e",
-        "gaps",
-        "0.1.4-80b9f15"
+        "docker",
+        "infrastructure",
+        "beast"
       ],
-      "author": "Q (Analysis)",
-      "status": "complete",
-      "build_version": "0.1.4-80b9f15"
-    },
-    {
-      "id": "ui-ux-UI-UX-FINDINGS-CONSOLIDATED",
-      "title": "UI/UX Manual Testing - Consolidated Report",
-      "category": "ui-ux",
-      "date": "2026-02-12",
-      "path": "ui-ux/UI-UX-FINDINGS-CONSOLIDATED.md",
-      "file": "UI-UX-FINDINGS-CONSOLIDATED.md",
-      "tags": [
-        "ui",
-        "ux",
-        "manual",
-        "a11y",
-        "wcag",
-        "macos",
-        "windows",
-        "linux",
-        "0.1.4-80b9f15"
-      ],
-      "author": "Alex Lohr, Cristián Vogel, Robin Van Boven",
-      "status": "complete",
-      "build_version": "0.1.4-80b9f15"
+      "author": "Beast Infrastructure",
+      "status": "resolved"
     },
     {
       "id": "security-2026-02-10-assessment",
@@ -363,38 +398,6 @@
       "author": "James Barclay",
       "status": "complete",
       "build_version": "0.1.4-d1b149a"
-    },
-    {
-      "id": "bugs-BEAST-2026-02-10-001-container-resource-leak",
-      "title": "Container Resource Leak",
-      "category": "bugs",
-      "date": "2026-02-10",
-      "path": "bugs/BEAST-2026-02-10-001-container-resource-leak.md",
-      "file": "BEAST-2026-02-10-001-container-resource-leak.md",
-      "tags": [
-        "docker",
-        "infrastructure",
-        "beast"
-      ],
-      "author": "Beast Infrastructure",
-      "status": "resolved",
-      "build_version": ""
-    },
-    {
-      "id": "executive-2026-02-09-summary",
-      "title": "QA Executive Summary",
-      "category": "executive",
-      "date": "2026-02-09",
-      "path": "executive/2026-02-09-summary.md",
-      "file": "2026-02-09-summary.md",
-      "tags": [
-        "summary",
-        "overview",
-        "qa"
-      ],
-      "author": "James Barclay",
-      "status": "complete",
-      "build_version": "0.1.4"
     },
     {
       "id": "features-authentication",
@@ -462,22 +465,6 @@
       "build_version": "0.1.4"
     },
     {
-      "id": "bugs-LINUX-DISTRIBUTION-NIGHTLY-2026-02-09",
-      "title": "Linux Distribution Issues",
-      "category": "bugs",
-      "date": "2026-02-09",
-      "path": "bugs/LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
-      "file": "LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
-      "tags": [
-        "linux",
-        "appimage",
-        "distribution"
-      ],
-      "author": "James Barclay",
-      "status": "open",
-      "build_version": "0.1.4-58a7392"
-    },
-    {
       "id": "features-settings",
       "title": "Settings Test Report",
       "category": "features",
@@ -536,6 +523,38 @@
         "workflows",
         "n8n",
         "automation"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "bugs-LINUX-DISTRIBUTION-NIGHTLY-2026-02-09",
+      "title": "Linux Distribution Issues",
+      "category": "bugs",
+      "date": "2026-02-09",
+      "path": "bugs/LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
+      "file": "LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
+      "tags": [
+        "linux",
+        "appimage",
+        "distribution"
+      ],
+      "author": "James Barclay",
+      "status": "open",
+      "build_version": "0.1.4-58a7392"
+    },
+    {
+      "id": "executive-2026-02-09-summary",
+      "title": "QA Executive Summary",
+      "category": "executive",
+      "date": "2026-02-09",
+      "path": "executive/2026-02-09-summary.md",
+      "file": "2026-02-09-summary.md",
+      "tags": [
+        "summary",
+        "overview",
+        "qa"
       ],
       "author": "James Barclay",
       "status": "complete",

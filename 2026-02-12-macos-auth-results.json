@@ -1,0 +1,34 @@
+{
+  "platform": "Darwin-arm64",
+  "version": "0.1.4-80b9f15",
+  "date": "2026-02-12",
+  "authState": "authenticated",
+  "suites": {
+    "baseline": {
+      "total": 43,
+      "passed": 37,
+      "failed": 0,
+      "skipped": 6
+    },
+    "regressions": {
+      "total": 28,
+      "passed": 10,
+      "failed": 11,
+      "skipped": 7,
+      "note": "Excluded auth.regression.spec.js and security.regression.spec.js"
+    }
+  },
+  "failures": [
+    { "id": "CHAT-11", "name": "messages persist after page reload", "severity": "CRITICAL" },
+    { "id": "SET-08", "name": "Package Manager Browse tab registry error", "severity": "HIGH" },
+    { "id": "TASK-03", "name": "task board kanban columns missing", "severity": "MEDIUM" },
+    { "id": "SPEC-04", "name": "specialist counts badges missing", "severity": "MEDIUM" },
+    { "id": "WORK-06", "name": "Execute button not found", "severity": "MEDIUM" },
+    { "id": "CHAT-03", "name": "chat placeholder mentions tasks", "severity": "LOW" },
+    { "id": "INST-05", "name": "sidebar toggle not found", "severity": "LOW" },
+    { "id": "SET-02", "name": "unexpected Settings tabs (Language, Sandbox)", "severity": "LOW" },
+    { "id": "WORK-02", "name": "Quick Start section not found", "severity": "LOW" },
+    { "id": "WORK-03", "name": "Visual Editor link not found", "severity": "LOW" },
+    { "id": "WORK-04", "name": "Refresh button not found", "severity": "LOW" }
+  ]
+}

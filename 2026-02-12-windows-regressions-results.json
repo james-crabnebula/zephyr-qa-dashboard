@@ -1,0 +1,15 @@
+{
+  "platform": "Windows-x64",
+  "version": "0.1.4-80b9f15",
+  "suite": "regressions",
+  "date": "2026-02-12",
+  "summary": {
+    "total": 40,
+    "passed": 0,
+    "failed": 31,
+    "skipped": 9
+  },
+  "note": "All tests require authentication. Test fixture calls ensureAuthenticated() in beforeEach, which fails without valid OAuth login.",
+  "blockedReason": "AUTH_REQUIRED",
+  "tests": []
+}

@@ -1,0 +1,37 @@
+{
+  "platform": "Windows-x64",
+  "version": "0.1.4-80b9f15",
+  "suite": "smoke",
+  "date": "2026-02-12",
+  "summary": {
+    "total": 23,
+    "passed": 23,
+    "failed": 0,
+    "skipped": 0
+  },
+  "tests": [
+    { "id": "smoke-01", "name": "connects to app via CDP", "status": "passed" },
+    { "id": "smoke-02", "name": "has correct window title", "status": "passed" },
+    { "id": "smoke-03", "name": "page has content", "status": "passed" },
+    { "id": "smoke-04", "name": "no JavaScript errors on load", "status": "passed" },
+    { "id": "smoke-05", "name": "app version is visible or retrievable", "status": "passed" },
+    { "id": "smoke-06", "name": "sidebar exists", "status": "passed" },
+    { "id": "smoke-07", "name": "main content area exists", "status": "passed" },
+    { "id": "smoke-08", "name": "has navigation links", "status": "passed" },
+    { "id": "smoke-09", "name": "Chat route loads (/chat)", "status": "passed" },
+    { "id": "smoke-10", "name": "Specialists route loads (/specialists)", "status": "passed" },
+    { "id": "smoke-11", "name": "Knowledge route loads (/knowledge)", "status": "passed" },
+    { "id": "smoke-12", "name": "Workflow route loads (/workflow)", "status": "passed" },
+    { "id": "smoke-13", "name": "Tasks route loads (/tasks)", "status": "passed" },
+    { "id": "smoke-14", "name": "/workflows (plural) should not 404", "status": "passed" },
+    { "id": "smoke-15", "name": "detects authentication state", "status": "passed" },
+    { "id": "smoke-16", "name": "shows appropriate UI for auth state", "status": "passed" },
+    { "id": "smoke-17", "name": "has testIds available", "status": "passed" },
+    { "id": "smoke-18", "name": "has aria-labels for accessibility", "status": "passed" },
+    { "id": "smoke-19", "name": "has buttons for interaction", "status": "passed" },
+    { "id": "smoke-20", "name": "has input elements", "status": "passed" },
+    { "id": "smoke-21", "name": "Zephyr E2E object exists", "status": "passed" },
+    { "id": "smoke-22", "name": "E2E ready flag if available", "status": "passed" },
+    { "id": "smoke-23", "name": "captures current state screenshot", "status": "passed" }
+  ]
+}

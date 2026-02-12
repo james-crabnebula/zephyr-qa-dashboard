@@ -1,0 +1,478 @@
+{
+  "schema_version": "2.0.0",
+  "timestamp": "2026-02-12T13:50:36.769Z",
+  "app_version": "0.1.4-80b9f15",
+  "platform": "linux-x64",
+  "suite": "smoke",
+  "browser": "unknown",
+  "duration_seconds": 250.6,
+  "stats": {
+    "total": 46,
+    "passed": 44,
+    "failed": 2,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "214476e9de3424b26d50-e5716ef657bd42aca63b",
+      "title": "connects to app via CDP",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 3,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-e5716ef657bd42aca63b",
+      "title": "connects to app via CDP",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 3,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-caf4b07ca0e8b957b63d",
+      "title": "has correct window title",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 4,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-caf4b07ca0e8b957b63d",
+      "title": "has correct window title",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 4,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-05db9d345558ddce7089",
+      "title": "page has content",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 42,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-05db9d345558ddce7089",
+      "title": "page has content",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 51,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-9b4e21c164c1fe61659b",
+      "title": "no JavaScript errors on load",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 2008,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-9b4e21c164c1fe61659b",
+      "title": "no JavaScript errors on load",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 2009,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-1f1282c35ab4e3b1b4ef",
+      "title": "app version is visible or retrievable",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 7,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "214476e9de3424b26d50-1f1282c35ab4e3b1b4ef",
+      "title": "app version is visible or retrievable",
+      "file": "smoke/app-launch.spec.js",
+      "status": "passed",
+      "duration_ms": 7,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-96011e2b70a1cd4261d7",
+      "title": "sidebar exists",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 9,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-96011e2b70a1cd4261d7",
+      "title": "sidebar exists",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 10,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-5cb6cd347e36e0f4d8f0",
+      "title": "main content area exists",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 8,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-5cb6cd347e36e0f4d8f0",
+      "title": "main content area exists",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 9,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-3f2e03e0124c15a251ff",
+      "title": "has navigation links",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 8,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-3f2e03e0124c15a251ff",
+      "title": "has navigation links",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 7,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-3820310eeaccb928f1b7",
+      "title": "Chat route loads (/chat)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 527,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-3820310eeaccb928f1b7",
+      "title": "Chat route loads (/chat)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 523,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-12ab2878f0440b16e873",
+      "title": "Specialists route loads (/specialists)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 519,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-12ab2878f0440b16e873",
+      "title": "Specialists route loads (/specialists)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 522,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-6aefd813be3c71c8e237",
+      "title": "Knowledge route loads (/knowledge)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 520,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-6aefd813be3c71c8e237",
+      "title": "Knowledge route loads (/knowledge)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 517,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-b87e95f8f7e02e0ea620",
+      "title": "Workflow route loads (/workflow)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 522,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-b87e95f8f7e02e0ea620",
+      "title": "Workflow route loads (/workflow)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 522,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-83186ebf4029b4b74171",
+      "title": "Tasks route loads (/tasks)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 519,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-83186ebf4029b4b74171",
+      "title": "Tasks route loads (/tasks)",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 517,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-194b190a39f85bd99f87",
+      "title": "/workflows (plural) should not 404",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 524,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-194b190a39f85bd99f87",
+      "title": "/workflows (plural) should not 404",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 526,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-b6c663dc41fa53ed3da6",
+      "title": "detects authentication state",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 5,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-b6c663dc41fa53ed3da6",
+      "title": "detects authentication state",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 8,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-599870ce3c7d3d13e019",
+      "title": "shows appropriate UI for auth state",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 15,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "13aed0daabf7ed493d68-599870ce3c7d3d13e019",
+      "title": "shows appropriate UI for auth state",
+      "file": "smoke/navigation.spec.js",
+      "status": "passed",
+      "duration_ms": 13,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-60d38a7b72a12794970b",
+      "title": "has testIds available",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 27,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-60d38a7b72a12794970b",
+      "title": "has testIds available",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 26,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-7be9b619409c6000c693",
+      "title": "has aria-labels for accessibility",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 8,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-7be9b619409c6000c693",
+      "title": "has aria-labels for accessibility",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 7,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-761185a2a2d674d38cde",
+      "title": "has buttons for interaction",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 18,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-761185a2a2d674d38cde",
+      "title": "has buttons for interaction",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 19,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-6c08cd5c6601ac31467c",
+      "title": "has input elements",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 10,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-6c08cd5c6601ac31467c",
+      "title": "has input elements",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 9,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-a431a328fd1ecbf42af6",
+      "title": "Zephyr E2E object exists",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 6,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-a431a328fd1ecbf42af6",
+      "title": "Zephyr E2E object exists",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 7,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-75e8e7b276a69a9626ee",
+      "title": "E2E ready flag if available",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 6,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-75e8e7b276a69a9626ee",
+      "title": "E2E ready flag if available",
+      "file": "smoke/structure.spec.js",
+      "status": "passed",
+      "duration_ms": 8,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-5aaf7b420585f72e18e6",
+      "title": "captures current state screenshot",
+      "file": "smoke/structure.spec.js",
+      "status": "timedOut",
+      "duration_ms": 120001,
+      "error_message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/smoke-structure-Screenshot-52c06-es-current-state-screenshot-headless/trace.zip"
+    },
+    {
+      "id": "c4815347d10a0aa5e28b-5aaf7b420585f72e18e6",
+      "title": "captures current state screenshot",
+      "file": "smoke/structure.spec.js",
+      "status": "timedOut",
+      "duration_ms": 120001,
+      "error_message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/smoke-structure-Screenshot-52c06-es-current-state-screenshot-headed/trace.zip"
+    }
+  ]
+}
