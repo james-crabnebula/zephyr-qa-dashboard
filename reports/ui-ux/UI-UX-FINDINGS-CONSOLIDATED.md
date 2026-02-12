@@ -22,12 +22,12 @@ platform: All (macOS, Windows, Linux)
 
 ## Summary
 
-Three testers performed manual UI/UX testing across all platforms. They found 16 issues ranging from layout bugs to accessibility failures.
+Three testers performed manual UI/UX testing across all platforms. They found 17 issues ranging from layout bugs to accessibility failures.
 
 | Severity | Count |
 |----------|-------|
 | HIGH | 4 |
-| MEDIUM | 6 |
+| MEDIUM | 7 |
 | LOW | 6 |
 
 ---
@@ -378,6 +378,29 @@ Look for:
 
 **Tester evidence:**
 - Robin: "A black bar at the bottom of the window, which seems to not belong there"
+
+---
+
+### UI-17 — OpenRouter replaced by "Local AI Models"
+
+| Field | Value |
+|-------|-------|
+| **Severity** | `MEDIUM` |
+| **Platform** | All |
+| **Confidence** | HIGH |
+
+**What's broken:** The Connections section in Settings no longer shows "Sign in with OpenRouter" or "Use API Key Instead". Instead, it shows "Local AI Models". This may be an intentional feature change or a regression.
+
+**Tester evidence:**
+- Alex: "no longer present, Local AI Models appears instead"
+
+**Question for dev team:** Is this intentional? Was OpenRouter integration removed in favour of local models?
+
+#### Validation Criteria
+
+- [ ] Confirm if OpenRouter removal is intentional
+- [ ] If intentional: Update documentation
+- [ ] If regression: Restore OpenRouter integration
 
 ---
 
