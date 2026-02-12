@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T13:58:32.937Z",
-  "total": 28,
+  "generated": "2026-02-12T14:10:26.374Z",
+  "total": 29,
   "categories": [
     "daily",
     "macos-feb12",
@@ -14,7 +14,7 @@
     "executive"
   ],
   "category_counts": {
-    "daily": 3,
+    "daily": 4,
     "macos-feb12": 10,
     "windows-feb12": 1,
     "linux-feb12": 1,
@@ -303,6 +303,25 @@
         "0.1.4-80b9f15"
       ],
       "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "daily-MANUAL-VS-E2E-DIFF",
+      "title": "Manual vs E2E — Coverage Diff",
+      "category": "daily",
+      "date": "2026-02-12",
+      "path": "daily/MANUAL-VS-E2E-DIFF.md",
+      "file": "MANUAL-VS-E2E-DIFF.md",
+      "tags": [
+        "analysis",
+        "coverage",
+        "manual",
+        "e2e",
+        "gaps",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Q (Analysis)",
       "status": "complete",
       "build_version": "0.1.4-80b9f15"
     },
