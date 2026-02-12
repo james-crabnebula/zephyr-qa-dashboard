@@ -1,0 +1,132 @@
+{
+  "schema_version": "2.0.0",
+  "version": "0.1.4-58a7392",
+  "generated": "2026-02-09T13:34:51.159Z",
+  "results": [
+    "beast/2026-02-09-101956-regressions-linux-x64-results.json",
+    "2026-02-09-1334-regressions-darwin-arm64-results.json",
+    "2026-02-09-1147-full-darwin-arm64-results.json",
+    "2026-02-03-124835-results.json",
+    "2026-02-03-124756-results.json",
+    "2026-02-03-120434-results.json"
+  ],
+  "automated": {
+    "latest_runs": [
+      {
+        "timestamp": "2026-02-09T13:34:21.426Z",
+        "platform": "Darwin-arm64",
+        "suite": "regressions",
+        "status": "failed",
+        "total": 33,
+        "passed": 23,
+        "failed": 2,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 130.9,
+        "browser": "Chrome/Version 1.58.2",
+        "app_version": "0.1.4-58a7392",
+        "source_json": "2026-02-09-1334-regressions-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-09T11:47:31.211Z",
+        "platform": "Darwin-arm64",
+        "suite": "full",
+        "status": "passed",
+        "total": 43,
+        "passed": 37,
+        "failed": 0,
+        "skipped": 6,
+        "flaky": 0,
+        "duration_seconds": 49.3,
+        "browser": "Chrome/144.0.7559.97",
+        "app_version": "0.1.4-58a7392",
+        "source_json": "2026-02-09-1147-full-darwin-arm64-results.json"
+      }
+    ],
+    "test_summary": {
+      "total_runs": 2,
+      "versions_tested": 1,
+      "total_tests": 76,
+      "total_passed": 60,
+      "total_failed": 2,
+      "total_skipped": 14,
+      "first_run": "2026-02-09T11:47:31.211Z",
+      "last_run": "2026-02-09T13:34:21.426Z"
+    },
+    "by_platform": {
+      "Darwin-arm64": {
+        "timestamp": "2026-02-09T13:34:21.426Z",
+        "status": "failed",
+        "total": 33,
+        "passed": 23,
+        "failed": 2,
+        "skipped": 8,
+        "suite": "regressions",
+        "browser": "Chrome/Version 1.58.2",
+        "app_version": "0.1.4-58a7392"
+      }
+    }
+  },
+  "manual": {
+    "date": "2026-02-03",
+    "version": "0.1.4",
+    "tester": "James Barclay",
+    "status": "complete",
+    "report_path": "docs/reports/2026-02-03-manual-testing-summary-v0.1.4.md",
+    "summary": {
+      "coverage": "70 tests, 7 suites",
+      "results": "6 pass, 1 blocked",
+      "issues": "2 HIGH, 2 MEDIUM, 10 LOW",
+      "headlines": [
+        "Tasks feature incomplete (HIGH)",
+        "Data persistence lost on sign-out (HIGH)",
+        "Packages registry unavailable (MEDIUM)",
+        "GitHub token save fails (MEDIUM)"
+      ],
+      "css_ux_notes": [
+        "CSS responsiveness issues in Specialists, Workflows",
+        "UX: No explicit save button, auto-saves on blur",
+        "UX: Local Only toggle icon same in both states",
+        "Visual: Billing shows '???', needs scroll to see logout"
+      ]
+    },
+    "suites": [
+      {
+        "name": "Chat",
+        "status": "pass",
+        "path": "docs/tests/01-chat.md"
+      },
+      {
+        "name": "Specialists",
+        "status": "pass",
+        "path": "docs/tests/02-specialists.md"
+      },
+      {
+        "name": "Knowledge",
+        "status": "pass",
+        "path": "docs/tests/03-knowledge.md"
+      },
+      {
+        "name": "Workflows",
+        "status": "pass",
+        "path": "docs/tests/04-workflows.md"
+      },
+      {
+        "name": "Tasks",
+        "status": "blocked",
+        "path": "docs/tests/05-tasks.md"
+      },
+      {
+        "name": "Settings",
+        "status": "pass",
+        "path": "docs/tests/06-settings.md"
+      },
+      {
+        "name": "Authentication",
+        "status": "pass",
+        "path": "docs/tests/07-authentication.md"
+      }
+    ]
+  },
+  "manual_history": []
+}

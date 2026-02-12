@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0.0",
+  "generated": "2026-02-12T09:00:18.305Z",
+  "total": 13,
+  "categories": [
+    "daily",
+    "features",
+    "bugs",
+    "security",
+    "executive"
+  ],
+  "category_counts": {
+    "daily": 1,
+    "features": 8,
+    "bugs": 2,
+    "security": 1,
+    "executive": 1
+  },
+  "reports": [
+    {
+      "id": "daily-2026-02-12-macos",
+      "title": "macOS Test Report - Executive Summary",
+      "category": "daily",
+      "date": "2026-02-12",
+      "path": "daily/2026-02-12-macos.md",
+      "file": "2026-02-12-macos.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "bugs-BEAST-2026-02-10-001-container-resource-leak",
+      "title": "Container Resource Leak",
+      "category": "bugs",
+      "date": "2026-02-10",
+      "path": "bugs/BEAST-2026-02-10-001-container-resource-leak.md",
+      "file": "BEAST-2026-02-10-001-container-resource-leak.md",
+      "tags": [
+        "docker",
+        "infrastructure",
+        "beast"
+      ],
+      "author": "Beast Infrastructure",
+      "status": "resolved"
+    },
+    {
+      "id": "security-2026-02-10-assessment",
+      "title": "Security Assessment",
+      "category": "security",
+      "date": "2026-02-10",
+      "path": "security/2026-02-10-assessment.md",
+      "file": "2026-02-10-assessment.md",
+      "tags": [
+        "security",
+        "xss",
+        "auth",
+        "critical"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4-d1b149a"
+    },
+    {
+      "id": "features-authentication",
+      "title": "Authentication Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/authentication.md",
+      "file": "authentication.md",
+      "tags": [
+        "auth",
+        "oauth",
+        "login",
+        "auth0"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-chat",
+      "title": "Chat Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/chat.md",
+      "file": "chat.md",
+      "tags": [
+        "chat",
+        "messaging",
+        "conversation"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-installation",
+      "title": "Installation Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/installation.md",
+      "file": "installation.md",
+      "tags": [
+        "installation",
+        "setup",
+        "launch"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-knowledge",
+      "title": "Knowledge Garden Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/knowledge.md",
+      "file": "knowledge.md",
+      "tags": [
+        "knowledge",
+        "rag",
+        "documents"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-settings",
+      "title": "Settings Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/settings.md",
+      "file": "settings.md",
+      "tags": [
+        "settings",
+        "preferences",
+        "configuration"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-specialists",
+      "title": "Specialists Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/specialists.md",
+      "file": "specialists.md",
+      "tags": [
+        "specialists",
+        "agents",
+        "ai"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-tasks",
+      "title": "Tasks Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/tasks.md",
+      "file": "tasks.md",
+      "tags": [
+        "tasks",
+        "kanban",
+        "project-management"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "features-workflows",
+      "title": "Workflows Test Report",
+      "category": "features",
+      "date": "2026-02-09",
+      "path": "features/workflows.md",
+      "file": "workflows.md",
+      "tags": [
+        "workflows",
+        "n8n",
+        "automation"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    },
+    {
+      "id": "bugs-LINUX-DISTRIBUTION-NIGHTLY-2026-02-09",
+      "title": "Linux Distribution Issues",
+      "category": "bugs",
+      "date": "2026-02-09",
+      "path": "bugs/LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
+      "file": "LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
+      "tags": [
+        "linux",
+        "appimage",
+        "distribution"
+      ],
+      "author": "James Barclay",
+      "status": "open",
+      "build_version": "0.1.4-58a7392"
+    },
+    {
+      "id": "executive-2026-02-09-summary",
+      "title": "QA Executive Summary",
+      "category": "executive",
+      "date": "2026-02-09",
+      "path": "executive/2026-02-09-summary.md",
+      "file": "2026-02-09-summary.md",
+      "tags": [
+        "summary",
+        "overview",
+        "qa"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4"
+    }
+  ]
+}
