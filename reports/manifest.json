@@ -1,9 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T09:50:40.673Z",
-  "total": 15,
+  "generated": "2026-02-12T09:52:20.923Z",
+  "total": 25,
   "categories": [
     "daily",
+    "macos-feb12",
     "features",
     "bugs",
     "security",
@@ -11,12 +12,203 @@
   ],
   "category_counts": {
     "daily": 3,
+    "macos-feb12": 10,
     "features": 8,
     "bugs": 2,
     "security": 1,
     "executive": 1
   },
   "reports": [
+    {
+      "id": "macos-feb12-00-executive-summary",
+      "title": "macOS 12 Feb — Executive Summary",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/00-executive-summary.md",
+      "file": "00-executive-summary.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "executive-summary"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-01-authentication",
+      "title": "macOS 12 Feb — Authentication",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/01-authentication.md",
+      "file": "01-authentication.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "authentication"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-02-settings",
+      "title": "macOS 12 Feb — Settings",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/02-settings.md",
+      "file": "02-settings.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "settings"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-03-chat",
+      "title": "macOS 12 Feb — Chat",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/03-chat.md",
+      "file": "03-chat.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "chat"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-04-specialists",
+      "title": "macOS 12 Feb — Specialists",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/04-specialists.md",
+      "file": "04-specialists.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "specialists"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-05-knowledge",
+      "title": "macOS 12 Feb — Knowledge Garden",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/05-knowledge.md",
+      "file": "05-knowledge.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "knowledge"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-06-workflows",
+      "title": "macOS 12 Feb — Workflows",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/06-workflows.md",
+      "file": "06-workflows.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "workflows"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-07-tasks",
+      "title": "macOS 12 Feb — Tasks",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/07-tasks.md",
+      "file": "07-tasks.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "tasks"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-08-installation",
+      "title": "macOS 12 Feb — Installation",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/08-installation.md",
+      "file": "08-installation.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "installation"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "macos-feb12-09-security",
+      "title": "macOS 12 Feb — Security",
+      "category": "macos-feb12",
+      "date": "2026-02-12",
+      "path": "macos-feb12/09-security.md",
+      "file": "09-security.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15",
+        "security"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
     {
       "id": "daily-macOS-0.1.4-80b9f15-Detailed-Breakdown",
       "title": "macOS Test Report - Detailed Breakdown",
@@ -73,6 +265,23 @@
       "build_version": "0.1.4-80b9f15"
     },
     {
+      "id": "security-2026-02-10-assessment",
+      "title": "Security Assessment",
+      "category": "security",
+      "date": "2026-02-10",
+      "path": "security/2026-02-10-assessment.md",
+      "file": "2026-02-10-assessment.md",
+      "tags": [
+        "security",
+        "xss",
+        "auth",
+        "critical"
+      ],
+      "author": "James Barclay",
+      "status": "complete",
+      "build_version": "0.1.4-d1b149a"
+    },
+    {
       "id": "bugs-BEAST-2026-02-10-001-container-resource-leak",
       "title": "Container Resource Leak",
       "category": "bugs",
@@ -89,21 +298,20 @@
       "build_version": ""
     },
     {
-      "id": "security-2026-02-10-assessment",
-      "title": "Security Assessment",
-      "category": "security",
-      "date": "2026-02-10",
-      "path": "security/2026-02-10-assessment.md",
-      "file": "2026-02-10-assessment.md",
+      "id": "executive-2026-02-09-summary",
+      "title": "QA Executive Summary",
+      "category": "executive",
+      "date": "2026-02-09",
+      "path": "executive/2026-02-09-summary.md",
+      "file": "2026-02-09-summary.md",
       "tags": [
-        "security",
-        "xss",
-        "auth",
-        "critical"
+        "summary",
+        "overview",
+        "qa"
       ],
       "author": "James Barclay",
       "status": "complete",
-      "build_version": "0.1.4-d1b149a"
+      "build_version": "0.1.4"
     },
     {
       "id": "features-authentication",
@@ -171,6 +379,22 @@
       "build_version": "0.1.4"
     },
     {
+      "id": "bugs-LINUX-DISTRIBUTION-NIGHTLY-2026-02-09",
+      "title": "Linux Distribution Issues",
+      "category": "bugs",
+      "date": "2026-02-09",
+      "path": "bugs/LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
+      "file": "LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
+      "tags": [
+        "linux",
+        "appimage",
+        "distribution"
+      ],
+      "author": "James Barclay",
+      "status": "open",
+      "build_version": "0.1.4-58a7392"
+    },
+    {
       "id": "features-settings",
       "title": "Settings Test Report",
       "category": "features",
@@ -229,38 +453,6 @@
         "workflows",
         "n8n",
         "automation"
-      ],
-      "author": "James Barclay",
-      "status": "complete",
-      "build_version": "0.1.4"
-    },
-    {
-      "id": "bugs-LINUX-DISTRIBUTION-NIGHTLY-2026-02-09",
-      "title": "Linux Distribution Issues",
-      "category": "bugs",
-      "date": "2026-02-09",
-      "path": "bugs/LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
-      "file": "LINUX-DISTRIBUTION-NIGHTLY-2026-02-09.md",
-      "tags": [
-        "linux",
-        "appimage",
-        "distribution"
-      ],
-      "author": "James Barclay",
-      "status": "open",
-      "build_version": "0.1.4-58a7392"
-    },
-    {
-      "id": "executive-2026-02-09-summary",
-      "title": "QA Executive Summary",
-      "category": "executive",
-      "date": "2026-02-09",
-      "path": "executive/2026-02-09-summary.md",
-      "file": "2026-02-09-summary.md",
-      "tags": [
-        "summary",
-        "overview",
-        "qa"
       ],
       "author": "James Barclay",
       "status": "complete",
