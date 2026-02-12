@@ -1,0 +1,866 @@
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+Running 33 tests using 1 worker
+
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+  ✘   1 [headless] › regressions/auth.regression.spec.js:17:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot see channel content (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+  ✘   2 [headless] › regressions/auth.regression.spec.js:44:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot access protected routes (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  override existing env vars with { override: true }
+  ✘   3 [headless] › regressions/auth.regression.spec.js:86:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-03: Auth0 signup does not redirect to 403 (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔑 add access controls to secrets: https://dotenvx.com/ops
+  ✘   4 [headless] › regressions/auth.regression.spec.js:137:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-04: Google OAuth popup is responsive (15.1s)
+  -   5 [headless] › regressions/auth.regression.spec.js:194:10 › Authentication Regressions › Platform-Specific (SKIP) › AUTH-02: sign-in dialog is centred in window (Win11)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+  ✘   6 [headless] › regressions/chat.regression.spec.js:22:5 › Chat Regressions › Message Persistence (CRITICAL) › CHAT-11: messages persist after page reload (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+  ✘   7 [headless] › regressions/chat.regression.spec.js:77:5 › Chat Regressions › Page Titles (MEDIUM) › CHAT-01: section pages do not show "New Chat" as title (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+  ✘   8 [headless] › regressions/chat.regression.spec.js:113:5 › Chat Regressions › Connection Banner (MEDIUM) › CHAT-08: disconnect banner does not flicker (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+  ✘   9 [headless] › regressions/chat.regression.spec.js:156:5 › Chat Regressions › Chat Input UX (LOW) › CHAT-03: chat input has meaningful placeholder and send button (15.1s)
+  -  10 [headless] › regressions/chat.regression.spec.js:186:10 › Chat Regressions › Deferred — Phase 3 (SKIP) › CHAT-06: AI responds to sent messages
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+  ✘  11 [headless] › regressions/installation.regression.spec.js:20:5 › Installation Regressions › Sidebar Toggle (LOW) › INST-05: sidebar collapse toggle responds to clicks (15.1s)
+  -  12 [headless] › regressions/installation.regression.spec.js:89:10 › Installation Regressions › Platform-Specific (SKIP) › INST-04: Linux app launches successfully
+  -  13 [headless] › regressions/installation.regression.spec.js:99:10 › Installation Regressions › Platform-Specific (SKIP) › INST-06: fullscreen mode does not break window layout (Win11)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+  ✘  14 [headless] › regressions/knowledge.regression.spec.js:22:5 › Knowledge Garden Regressions › Sidebar Counts (MEDIUM) › KNOW-06: knowledge sidebar items have count badges (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+  ✘  15 [headless] › regressions/knowledge.regression.spec.js:61:5 › Knowledge Garden Regressions › Empty State (MEDIUM) › KNOW-07: empty state text and options match expected design (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+  ✘  16 [headless] › regressions/knowledge.regression.spec.js:105:5 › Knowledge Garden Regressions › Icon Rendering (LOW) › KNOW-01: knowledge icon is visible in sidebar (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+  ✘  17 [headless] › regressions/settings.regression.spec.js:22:5 › Settings Regressions › Package Manager (HIGH) › SET-08: Package Manager Browse tab does not show registry error (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+  ✘  18 [headless] › regressions/settings.regression.spec.js:53:5 › Settings Regressions › GitHub Token (HIGH) › SET-09: GitHub token settings link does not throw ACL error (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔄 add secrets lifecycle management: https://dotenvx.com/ops
+  ✘  19 [headless] › regressions/settings.regression.spec.js:96:5 › Settings Regressions › Billing Section (MEDIUM) › SET-06: Billing section has real content or clear unavailable state (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+  ✘  20 [headless] › regressions/settings.regression.spec.js:134:5 › Settings Regressions › Section Count (LOW) › SET-02: Settings has expected number of sections (15.1s)
+  -  21 [headless] › regressions/settings.regression.spec.js:160:10 › Settings Regressions › Platform-Specific (SKIP) › SET-04: dark theme sidebar is legible (Win11)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+  ✘  22 [headless] › regressions/specialists.regression.spec.js:22:5 › Specialists Regressions › List Counts (MEDIUM) › SPEC-04: displayed specialist counts match actual rendered items (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+  ✘  23 [headless] › regressions/specialists.regression.spec.js:71:5 › Specialists Regressions › Creation Flow (MEDIUM) › SPEC-06: Create Specialist shows creation form or wizard (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+  ✘  24 [headless] › regressions/specialists.regression.spec.js:115:5 › Specialists Regressions › Creation Categories (LOW) › SPEC-07: specialist creation view has category or filter options (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+  ✘  25 [headless] › regressions/tasks.regression.spec.js:23:5 › Tasks Regressions › Empty State (MEDIUM) › TASK-03: task board does not show unexpected pre-existing tasks (15.1s)
+  -  26 [headless] › regressions/tasks.regression.spec.js:55:10 › Tasks Regressions › Blocked — Feature Incomplete (SKIP) › TASK-05: task cards can be dragged between Kanban columns
+  -  27 [headless] › regressions/tasks.regression.spec.js:65:10 › Tasks Regressions › Blocked — Feature Incomplete (SKIP) › TASK-09: tasks have a delete option
+  -  28 [headless] › regressions/tasks.regression.spec.js:74:10 › Tasks Regressions › Blocked — Feature Incomplete (SKIP) › TASK-10: tasks load while offline
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+  ✘  29 [headless] › regressions/workflows.regression.spec.js:24:5 › Workflows Regressions › Visual Editor Layout (MEDIUM) › WORK-05: visual editor fits at multiple viewport sizes (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+  ✘  30 [headless] › regressions/workflows.regression.spec.js:61:5 › Workflows Regressions › Execute Feedback (MEDIUM) › WORK-06: Execute button provides feedback when clicked (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+  ✘  31 [headless] › regressions/workflows.regression.spec.js:111:5 › Workflows Regressions › Quick Start Text (LOW) › WORK-02: Quick Start step 2 matches actual interaction method (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+  ✘  32 [headless] › regressions/workflows.regression.spec.js:145:5 › Workflows Regressions › Node Creation (LOW) › WORK-03: double-click on palette item creates exactly one node (15.1s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+  ✘  33 [headless] › regressions/workflows.regression.spec.js:183:5 › Workflows Regressions › Refresh Dialog (LOW) › WORK-04: refresh success toast is fully opaque (15.1s)
+
+
+  1) [headless] › regressions/auth.regression.spec.js:17:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot see channel content 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/auth.regression.spec.js:19:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [headless] › regressions/auth.regression.spec.js:44:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot access protected routes 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/auth.regression.spec.js:45:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [headless] › regressions/auth.regression.spec.js:86:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-03: Auth0 signup does not redirect to 403 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/auth.regression.spec.js:83:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [headless] › regressions/auth.regression.spec.js:137:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-04: Google OAuth popup is responsive 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/auth.regression.spec.js:83:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [headless] › regressions/chat.regression.spec.js:22:5 › Chat Regressions › Message Persistence (CRITICAL) › CHAT-11: messages persist after page reload 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/chat.regression.spec.js:19:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [headless] › regressions/chat.regression.spec.js:77:5 › Chat Regressions › Page Titles (MEDIUM) › CHAT-01: section pages do not show "New Chat" as title 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/chat.regression.spec.js:74:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-dab38--not-show-New-Chat-as-title-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-chat.regressio-dab38--not-show-New-Chat-as-title-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-dab38--not-show-New-Chat-as-title-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-chat.regressio-dab38--not-show-New-Chat-as-title-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [headless] › regressions/chat.regression.spec.js:113:5 › Chat Regressions › Connection Banner (MEDIUM) › CHAT-08: disconnect banner does not flicker 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/chat.regression.spec.js:110:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-071c0-ect-banner-does-not-flicker-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-chat.regressio-071c0-ect-banner-does-not-flicker-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-071c0-ect-banner-does-not-flicker-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-chat.regressio-071c0-ect-banner-does-not-flicker-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [headless] › regressions/chat.regression.spec.js:156:5 › Chat Regressions › Chat Input UX (LOW) › CHAT-03: chat input has meaningful placeholder and send button 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/chat.regression.spec.js:153:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [headless] › regressions/installation.regression.spec.js:20:5 › Installation Regressions › Sidebar Toggle (LOW) › INST-05: sidebar collapse toggle responds to clicks 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/installation.regression.spec.js:17:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [headless] › regressions/knowledge.regression.spec.js:22:5 › Knowledge Garden Regressions › Sidebar Counts (MEDIUM) › KNOW-06: knowledge sidebar items have count badges 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/knowledge.regression.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-knowledge.regr-86251-bar-items-have-count-badges-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-knowledge.regr-86251-bar-items-have-count-badges-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-knowledge.regr-86251-bar-items-have-count-badges-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-knowledge.regr-86251-bar-items-have-count-badges-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [headless] › regressions/knowledge.regression.spec.js:61:5 › Knowledge Garden Regressions › Empty State (MEDIUM) › KNOW-07: empty state text and options match expected design 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/knowledge.regression.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-knowledge.regr-329da-tions-match-expected-design-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-knowledge.regr-329da-tions-match-expected-design-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-knowledge.regr-329da-tions-match-expected-design-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-knowledge.regr-329da-tions-match-expected-design-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [headless] › regressions/knowledge.regression.spec.js:105:5 › Knowledge Garden Regressions › Icon Rendering (LOW) › KNOW-01: knowledge icon is visible in sidebar 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/knowledge.regression.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-knowledge.regr-7397d--icon-is-visible-in-sidebar-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-knowledge.regr-7397d--icon-is-visible-in-sidebar-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-knowledge.regr-7397d--icon-is-visible-in-sidebar-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-knowledge.regr-7397d--icon-is-visible-in-sidebar-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [headless] › regressions/settings.regression.spec.js:22:5 › Settings Regressions › Package Manager (HIGH) › SET-08: Package Manager Browse tab does not show registry error 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/settings.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [headless] › regressions/settings.regression.spec.js:53:5 › Settings Regressions › GitHub Token (HIGH) › SET-09: GitHub token settings link does not throw ACL error 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/settings.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-b9dd3-nk-does-not-throw-ACL-error-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-settings.regre-b9dd3-nk-does-not-throw-ACL-error-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-b9dd3-nk-does-not-throw-ACL-error-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-settings.regre-b9dd3-nk-does-not-throw-ACL-error-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  15) [headless] › regressions/settings.regression.spec.js:96:5 › Settings Regressions › Billing Section (MEDIUM) › SET-06: Billing section has real content or clear unavailable state 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/settings.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-c66eb--or-clear-unavailable-state-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-settings.regre-c66eb--or-clear-unavailable-state-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-c66eb--or-clear-unavailable-state-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-settings.regre-c66eb--or-clear-unavailable-state-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  16) [headless] › regressions/settings.regression.spec.js:134:5 › Settings Regressions › Section Count (LOW) › SET-02: Settings has expected number of sections 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/settings.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  17) [headless] › regressions/specialists.regression.spec.js:22:5 › Specialists Regressions › List Counts (MEDIUM) › SPEC-04: displayed specialist counts match actual rendered items 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/specialists.regression.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  18) [headless] › regressions/specialists.regression.spec.js:71:5 › Specialists Regressions › Creation Flow (MEDIUM) › SPEC-06: Create Specialist shows creation form or wizard 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/specialists.regression.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-6ea21-ows-creation-form-or-wizard-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-specialists.re-6ea21-ows-creation-form-or-wizard-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-6ea21-ows-creation-form-or-wizard-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-specialists.re-6ea21-ows-creation-form-or-wizard-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  19) [headless] › regressions/specialists.regression.spec.js:115:5 › Specialists Regressions › Creation Categories (LOW) › SPEC-07: specialist creation view has category or filter options 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/specialists.regression.spec.js:16:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-fd135--category-or-filter-options-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-specialists.re-fd135--category-or-filter-options-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-fd135--category-or-filter-options-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-specialists.re-fd135--category-or-filter-options-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  20) [headless] › regressions/tasks.regression.spec.js:23:5 › Tasks Regressions › Empty State (MEDIUM) › TASK-03: task board does not show unexpected pre-existing tasks 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/tasks.regression.spec.js:17:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  21) [headless] › regressions/workflows.regression.spec.js:24:5 › Workflows Regressions › Visual Editor Layout (MEDIUM) › WORK-05: visual editor fits at multiple viewport sizes 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/workflows.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-023c6--at-multiple-viewport-sizes-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-023c6--at-multiple-viewport-sizes-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-023c6--at-multiple-viewport-sizes-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-023c6--at-multiple-viewport-sizes-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  22) [headless] › regressions/workflows.regression.spec.js:61:5 › Workflows Regressions › Execute Feedback (MEDIUM) › WORK-06: Execute button provides feedback when clicked 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/workflows.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  23) [headless] › regressions/workflows.regression.spec.js:111:5 › Workflows Regressions › Quick Start Text (LOW) › WORK-02: Quick Start step 2 matches actual interaction method 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/workflows.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  24) [headless] › regressions/workflows.regression.spec.js:145:5 › Workflows Regressions › Node Creation (LOW) › WORK-03: double-click on palette item creates exactly one node 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/workflows.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  25) [headless] › regressions/workflows.regression.spec.js:183:5 › Workflows Regressions › Refresh Dialog (LOW) › WORK-04: refresh success toast is fully opaque 
+
+    TimeoutError: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "page"
+
+       at fixtures/zephyr.fixture.js:144
+
+      142 |
+      143 |         // Listen for Auth0 page
+    > 144 |         const pagePromise = context.waitForEvent('page', { timeout: 15000 });
+          |                                     ^
+      145 |
+      146 |         await signInButton.click();
+      147 |
+        at Object.login (/app/e2e-test/fixtures/zephyr.fixture.js:144:37)
+        at Object.ensureAuthenticated (/app/e2e-test/fixtures/zephyr.fixture.js:130:16)
+        at /app/e2e-test/regressions/workflows.regression.spec.js:18:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headless/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headless/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headless/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headless/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  25 failed
+    [headless] › regressions/auth.regression.spec.js:17:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot see channel content 
+    [headless] › regressions/auth.regression.spec.js:44:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot access protected routes 
+    [headless] › regressions/auth.regression.spec.js:86:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-03: Auth0 signup does not redirect to 403 
+    [headless] › regressions/auth.regression.spec.js:137:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-04: Google OAuth popup is responsive 
+    [headless] › regressions/chat.regression.spec.js:22:5 › Chat Regressions › Message Persistence (CRITICAL) › CHAT-11: messages persist after page reload 
+    [headless] › regressions/chat.regression.spec.js:77:5 › Chat Regressions › Page Titles (MEDIUM) › CHAT-01: section pages do not show "New Chat" as title 
+    [headless] › regressions/chat.regression.spec.js:113:5 › Chat Regressions › Connection Banner (MEDIUM) › CHAT-08: disconnect banner does not flicker 
+    [headless] › regressions/chat.regression.spec.js:156:5 › Chat Regressions › Chat Input UX (LOW) › CHAT-03: chat input has meaningful placeholder and send button 
+    [headless] › regressions/installation.regression.spec.js:20:5 › Installation Regressions › Sidebar Toggle (LOW) › INST-05: sidebar collapse toggle responds to clicks 
+    [headless] › regressions/knowledge.regression.spec.js:22:5 › Knowledge Garden Regressions › Sidebar Counts (MEDIUM) › KNOW-06: knowledge sidebar items have count badges 
+    [headless] › regressions/knowledge.regression.spec.js:61:5 › Knowledge Garden Regressions › Empty State (MEDIUM) › KNOW-07: empty state text and options match expected design 
+    [headless] › regressions/knowledge.regression.spec.js:105:5 › Knowledge Garden Regressions › Icon Rendering (LOW) › KNOW-01: knowledge icon is visible in sidebar 
+    [headless] › regressions/settings.regression.spec.js:22:5 › Settings Regressions › Package Manager (HIGH) › SET-08: Package Manager Browse tab does not show registry error 
+    [headless] › regressions/settings.regression.spec.js:53:5 › Settings Regressions › GitHub Token (HIGH) › SET-09: GitHub token settings link does not throw ACL error 
+    [headless] › regressions/settings.regression.spec.js:96:5 › Settings Regressions › Billing Section (MEDIUM) › SET-06: Billing section has real content or clear unavailable state 
+    [headless] › regressions/settings.regression.spec.js:134:5 › Settings Regressions › Section Count (LOW) › SET-02: Settings has expected number of sections 
+    [headless] › regressions/specialists.regression.spec.js:22:5 › Specialists Regressions › List Counts (MEDIUM) › SPEC-04: displayed specialist counts match actual rendered items 
+    [headless] › regressions/specialists.regression.spec.js:71:5 › Specialists Regressions › Creation Flow (MEDIUM) › SPEC-06: Create Specialist shows creation form or wizard 
+    [headless] › regressions/specialists.regression.spec.js:115:5 › Specialists Regressions › Creation Categories (LOW) › SPEC-07: specialist creation view has category or filter options 
+    [headless] › regressions/tasks.regression.spec.js:23:5 › Tasks Regressions › Empty State (MEDIUM) › TASK-03: task board does not show unexpected pre-existing tasks 
+    [headless] › regressions/workflows.regression.spec.js:24:5 › Workflows Regressions › Visual Editor Layout (MEDIUM) › WORK-05: visual editor fits at multiple viewport sizes 
+    [headless] › regressions/workflows.regression.spec.js:61:5 › Workflows Regressions › Execute Feedback (MEDIUM) › WORK-06: Execute button provides feedback when clicked 
+    [headless] › regressions/workflows.regression.spec.js:111:5 › Workflows Regressions › Quick Start Text (LOW) › WORK-02: Quick Start step 2 matches actual interaction method 
+    [headless] › regressions/workflows.regression.spec.js:145:5 › Workflows Regressions › Node Creation (LOW) › WORK-03: double-click on palette item creates exactly one node 
+    [headless] › regressions/workflows.regression.spec.js:183:5 › Workflows Regressions › Refresh Dialog (LOW) › WORK-04: refresh success toast is fully opaque 
+  8 skipped

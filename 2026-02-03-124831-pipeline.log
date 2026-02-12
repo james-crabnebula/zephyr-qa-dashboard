@@ -1,0 +1,5 @@
+=== Step 1: Version Check ===
+No new version available
+
+No new version and --force not specified. Exiting.
+Use --force to run tests anyway, or --skip-download to test installed app.

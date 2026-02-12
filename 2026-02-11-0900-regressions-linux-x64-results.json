@@ -1,0 +1,348 @@
+{
+  "schema_version": "2.0.0",
+  "timestamp": "2026-02-11T09:00:35.919Z",
+  "app_version": "0.1.4-d642a1f",
+  "platform": "linux-x64",
+  "suite": "regressions",
+  "browser": "unknown",
+  "duration_seconds": 434.7,
+  "stats": {
+    "total": 33,
+    "passed": 4,
+    "failed": 21,
+    "skipped": 8,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "68a300ba9781c3843ef8-d2274e8c9d4392fb2314",
+      "title": "AUTH-01: unauthenticated users cannot see channel content",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6106,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"handle@88f5397736d6ef32474bbfd79dc2a4f1\", \"_type\": \"ElementHandle\"}\u001b[39m\n\n  34 |       // Verify no message input is accessible\n  35 |       const messageInput = await page.$('textarea, [contenteditable=\"true\"], input[placeholder*=\"message\"], input[placeholder*=\"chat\"]');\n> 36 |       expect(messageInput).toBeNull();\n     |                            ^\n  37 |\n  38 |       // Take screenshot for evidence\n  39 |       await zephyr.screenshot('auth-01-unauthenticated-state');\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/auth.regression.spec.js:36:28",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-be2812912eccc57d56c1",
+      "title": "AUTH-01: unauthenticated users cannot access protected routes",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 7136,
+      "error_message": "Error: Action controls visible on /specialists when unauthenticated\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"handle@9cb2ed639bef8eab0a92a6e169de91e6\", \"_type\": \"ElementHandle\"}\u001b[39m\n\n  57 |         // Action controls must NOT be accessible when unauthenticated\n  58 |         const actionBtn = await page.$('button:has-text(\"Create\"), button:has-text(\"New\"), button:has-text(\"Add\"), button:has-text(\"Execute\")');\n> 59 |         expect(actionBtn, `Action controls visible on ${route} when unauthenticated`).toBeNull();\n     |                                                                                       ^\n  60 |\n  61 |         await zephyr.screenshot(`auth-01-unauth-${route.replace('/', '')}`);\n  62 |       }\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/auth.regression.spec.js:59:87",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-495c91b1e420de14684c",
+      "title": "AUTH-03: Auth0 signup does not redirect to 403",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6102,
+      "error_message": "Error: OAuth login button must be visible on login screen\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  100 |       // Click OAuth button\n  101 |       const oauthBtn = await page.$('button:has-text(\"Log in with OAuth\")');\n> 102 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();\n      |                                                                                  ^\n  103 |       await oauthBtn.click();\n  104 |       await page.waitForTimeout(2000);\n  105 |\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/auth.regression.spec.js:102:82",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-42f8680eea622274110f",
+      "title": "AUTH-04: Google OAuth popup is responsive",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6095,
+      "error_message": "Error: OAuth login button must be visible on login screen\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  164 |\n  165 |       const oauthBtn = await page.$('button:has-text(\"Log in with OAuth\")');\n> 166 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();\n      |                                                                                  ^\n  167 |       await oauthBtn.click();\n  168 |       await page.waitForTimeout(2000);\n  169 |\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/auth.regression.spec.js:166:82",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-64288bf9a1d9bbdc93b3",
+      "title": "AUTH-02: sign-in dialog is centred in window (Win11)",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-d9150c27830bb5197038",
+      "title": "CHAT-11: messages persist after page reload",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "timedOut",
+      "duration_ms": 65005,
+      "error_message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/trace.zip"
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-22e25a662e412b2e0278",
+      "title": "CHAT-01: section pages do not show \"New Chat\" as title",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 6253,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-5a6f99657ba1709d7162",
+      "title": "CHAT-08: disconnect banner does not flicker",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4575,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-218d7bb0730131c8b0ff",
+      "title": "CHAT-03: chat input has meaningful placeholder and send button",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6601,
+      "error_message": "Error: Placeholder should reference messaging, not tasks\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"message\"\u001b[39m\nReceived string:    \u001b[31m\"start a task or invite some people to a chat with @\"\u001b[39m\n\n  165 |       const placeholder = await messageInput.getAttribute('placeholder');\n  166 |       expect(placeholder, 'Chat input must have a placeholder').toBeTruthy();\n> 167 |       expect(placeholder.toLowerCase(), 'Placeholder should reference messaging, not tasks').toContain('message');\n      |                                                                                              ^\n  168 |\n  169 |       // Find send button — should have send-related aria label, not ambiguous\n  170 |       const sendBtn = await page.$('button[aria-label*=\"send\" i], button[aria-label*=\"Send\"], button[class*=\"send\"]');\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/chat.regression.spec.js:167:94",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/trace.zip"
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-c19433c490db1de147c5",
+      "title": "CHAT-06: AI responds to sent messages",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-aa09e6c5c8c41670cfaf",
+      "title": "INST-05: sidebar collapse toggle responds to clicks",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 5067,
+      "error_message": "Error: Sidebar toggle button must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  31 |       const menuBtn = await page.$('[class*=\"hamburger\"], [class*=\"menu-toggle\"]');\n  32 |       const toggle = toggleBtn || menuBtn;\n> 33 |       expect(toggle, 'Sidebar toggle button must exist').not.toBeNull();\n     |                                                              ^\n  34 |\n  35 |       // Get sidebar width before toggle\n  36 |       const widthBefore = await page.evaluate(() => {\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/installation.regression.spec.js:33:62",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/trace.zip"
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-9781f233803f10b4ebc0",
+      "title": "INST-04: Linux app launches successfully",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-96bda0d70b8d509ee9f1",
+      "title": "INST-06: fullscreen mode does not break window layout (Win11)",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-7f4c02d38d5c0865d930",
+      "title": "KNOW-06: knowledge sidebar items have count badges",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "timedOut",
+      "duration_ms": 120002,
+      "error_message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-knowledge.regr-86251-bar-items-have-count-badges-headed/trace.zip"
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-4b69d1a117f6b196f342",
+      "title": "KNOW-07: empty state text and options match expected design",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6607,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  71 |         content.toLowerCase().includes('seedling');\n  72 |\n> 73 |       expect(hasContent).toBe(true);\n     |                          ^\n  74 |\n  75 |       // Must have actionable add/create options (whether empty state or populated)\n  76 |       const addOptions = await page.$$('button:has-text(\"Add\"), button:has-text(\"Create\"), button:has-text(\"New\"), [class*=\"add\"], [class*=\"create\"]');\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/knowledge.regression.spec.js:73:26",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-knowledge.regr-329da-tions-match-expected-design-headed/trace.zip"
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-a01e9a87108fd1274144",
+      "title": "KNOW-01: knowledge icon is visible in sidebar",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6603,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeDefined\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mundefined\u001b[39m\n\n  93 |\n  94 |       // Knowledge should be in the sidebar\n> 95 |       expect(knowledgeItem).toBeDefined();\n     |                             ^\n  96 |\n  97 |       // Take screenshot for visual regression baseline\n  98 |       // This is a cosmetic issue that needs visual inspection\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/knowledge.regression.spec.js:95:29",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-knowledge.regr-7397d--icon-is-visible-in-sidebar-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-28125b6eff03b1e7d4e9",
+      "title": "SET-08: Package Manager Browse tab does not show registry error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 5391,
+      "error_message": "Error: Not authenticated - cannot open settings\n\n   at fixtures/zephyr.fixture.js:358\n\n  356 |       async openSettings() {\n  357 |         if (!(await this.isAuthenticated())) {\n> 358 |           throw new Error('Not authenticated - cannot open settings');\n      |                 ^\n  359 |         }\n  360 |\n  361 |         // Open user menu (Radix dropdown)\n    at Object.openSettings (/home/jimmyb/zephyr-e2e/e2e-test/fixtures/zephyr.fixture.js:358:17)\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/settings.regression.spec.js:28:22",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-8d4f054a3f9d050ef15a",
+      "title": "SET-09: GitHub token settings link does not throw ACL error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 5391,
+      "error_message": "Error: Not authenticated - cannot open settings\n\n   at fixtures/zephyr.fixture.js:358\n\n  356 |       async openSettings() {\n  357 |         if (!(await this.isAuthenticated())) {\n> 358 |           throw new Error('Not authenticated - cannot open settings');\n      |                 ^\n  359 |         }\n  360 |\n  361 |         // Open user menu (Radix dropdown)\n    at Object.openSettings (/home/jimmyb/zephyr-e2e/e2e-test/fixtures/zephyr.fixture.js:358:17)\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/settings.regression.spec.js:59:22",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-settings.regre-b9dd3-nk-does-not-throw-ACL-error-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-7239a0a8e385c2788d53",
+      "title": "SET-06: Billing section has real content or clear unavailable state",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 5398,
+      "error_message": "Error: Not authenticated - cannot open settings\n\n   at fixtures/zephyr.fixture.js:358\n\n  356 |       async openSettings() {\n  357 |         if (!(await this.isAuthenticated())) {\n> 358 |           throw new Error('Not authenticated - cannot open settings');\n      |                 ^\n  359 |         }\n  360 |\n  361 |         // Open user menu (Radix dropdown)\n    at Object.openSettings (/home/jimmyb/zephyr-e2e/e2e-test/fixtures/zephyr.fixture.js:358:17)\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/settings.regression.spec.js:100:22",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-settings.regre-c66eb--or-clear-unavailable-state-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-59fd3df0eed733ff94f9",
+      "title": "SET-02: Settings has expected number of sections",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 5384,
+      "error_message": "Error: Not authenticated - cannot open settings\n\n   at fixtures/zephyr.fixture.js:358\n\n  356 |       async openSettings() {\n  357 |         if (!(await this.isAuthenticated())) {\n> 358 |           throw new Error('Not authenticated - cannot open settings');\n      |                 ^\n  359 |         }\n  360 |\n  361 |         // Open user menu (Radix dropdown)\n    at Object.openSettings (/home/jimmyb/zephyr-e2e/e2e-test/fixtures/zephyr.fixture.js:358:17)\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/settings.regression.spec.js:137:22",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-7462f4e911224d79a66b",
+      "title": "SET-04: dark theme sidebar is legible (Win11)",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-d50d18f108f80151466f",
+      "title": "SPEC-04: displayed specialist counts match actual rendered items",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6611,
+      "error_message": "Error: Count badges must be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  54 |       // Specialists page must render items and show count badges\n  55 |       expect(countResult.renderedItems, 'Specialist items must be rendered').toBeGreaterThan(0);\n> 56 |       expect(countResult.badges.length, 'Count badges must be visible').toBeGreaterThan(0);\n     |                                                                         ^\n  57 |\n  58 |       // At least one badge should roughly match rendered item count\n  59 |       const badgeValues = countResult.badges.map(b => parseInt(b.text));\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/specialists.regression.spec.js:56:73",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/trace.zip"
+    },
+    {
+      "id": "90668fd0e59431ce5596-b28654e661f8beac4b39",
+      "title": "SPEC-06: Create Specialist shows creation form or wizard",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3710,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-452e44b4a124cd368484",
+      "title": "SPEC-07: specialist creation view has category or filter options",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3641,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-bdc332702c7eddfda1d3",
+      "title": "TASK-03: task board does not show unexpected pre-existing tasks",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6563,
+      "error_message": "Error: Task board must display kanban columns\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  33 |         content.toLowerCase().includes('progress') ||\n  34 |         content.toLowerCase().includes('done');\n> 35 |       expect(hasKanbanColumns, 'Task board must display kanban columns').toBe(true);\n     |                                                                          ^\n  36 |\n  37 |       // Kanban must have visible column containers\n  38 |       const columns = await page.$$('[class*=\"column\" i], [class*=\"lane\" i], [class*=\"kanban\"] > div');\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/tasks.regression.spec.js:35:74",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/trace.zip"
+    },
+    {
+      "id": "28d01d8a8cae09354e06-b0fa25b26ebd008a474a",
+      "title": "TASK-05: task cards can be dragged between Kanban columns",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-afb6195f1f91aefd32fc",
+      "title": "TASK-09: tasks have a delete option",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-cdfb38317ca36d0e2595",
+      "title": "TASK-10: tasks load while offline",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-7f1715d0f6ea4dd08273",
+      "title": "WORK-05: visual editor fits at multiple viewport sizes",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "timedOut",
+      "duration_ms": 120001,
+      "error_message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-workflows.regr-023c6--at-multiple-viewport-sizes-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-76dc7e80270485cd92b9",
+      "title": "WORK-06: Execute button provides feedback when clicked",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6598,
+      "error_message": "Error: Execute/Run/Start button must be visible on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  64 |       // Find Execute button\n  65 |       const executeBtn = await page.$('button:has-text(\"Execute\"), button:has-text(\"Run\"), button:has-text(\"Start\")');\n> 66 |       expect(executeBtn, 'Execute/Run/Start button must be visible on workflow page').not.toBeNull();\n     |                                                                                           ^\n  67 |\n  68 |       // Record the page state before clicking\n  69 |       const bodyBefore = await page.textContent('body');\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/workflows.regression.spec.js:66:91",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-f136db4299b543c92a07",
+      "title": "WORK-02: Quick Start step 2 matches actual interaction method",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6612,
+      "error_message": "Error: Quick Start section must be visible on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  114 |       // Quick Start section must be visible\n  115 |       const hasQuickStart = content.toLowerCase().includes('quick start') || content.toLowerCase().includes('get started');\n> 116 |       expect(hasQuickStart, 'Quick Start section must be visible on workflow page').toBe(true);\n      |                                                                                     ^\n  117 |\n  118 |       // Step 2 should NOT mention \"drag\" — dragging doesn't work, only clicking does\n  119 |       const hasDragInstruction =\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/workflows.regression.spec.js:116:85",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-ede54f958db745055e6a",
+      "title": "WORK-03: double-click on palette item creates exactly one node",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6604,
+      "error_message": "Error: Visual Editor link must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  130 |       // Navigate to visual editor (use force click to avoid interception)\n  131 |       const editorLink = page.locator('text=\"Visual Editor\"').first();\n> 132 |       expect(await editorLink.count(), 'Visual Editor link must exist').toBeGreaterThan(0);\n      |                                                                         ^\n  133 |       await editorLink.click({ force: true, timeout: 5000 });\n  134 |       await page.waitForTimeout(1000);\n  135 |\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/workflows.regression.spec.js:132:73",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-c0296b5ac8fc5af05609",
+      "title": "WORK-04: refresh success toast is fully opaque",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6612,
+      "error_message": "Error: Refresh button must exist on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  162 |       // Find refresh button\n  163 |       const refreshBtn = await page.$('button[aria-label*=\"Refresh\" i], button[aria-label*=\"refresh\" i], button[aria-label*=\"Reload\" i], button:has-text(\"Refresh\")');\n> 164 |       expect(refreshBtn, 'Refresh button must exist on workflow page').not.toBeNull();\n      |                                                                            ^\n  165 |\n  166 |       await refreshBtn.click();\n  167 |       await page.waitForTimeout(1000);\n    at /home/jimmyb/zephyr-e2e/e2e-test/regressions/workflows.regression.spec.js:164:76",
+      "screenshot": null,
+      "trace": "/home/jimmyb/zephyr-e2e/e2e-test/test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/trace.zip"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+[2026-02-03T11:45:38Z] [macos] ==============================================
+[2026-02-03T11:45:38Z] [macos] NATS Subscriber Starting
+[2026-02-03T11:45:38Z] [macos] Platform: macos
+[2026-02-03T11:45:38Z] [macos] NATS Server: 100.115.186.91:4222
+[2026-02-03T11:45:38Z] [macos] ==============================================
+[2026-02-03T11:45:38Z] [macos] Subscribing to zephyr.nightly.new...
+[2026-02-03T11:45:42Z] [macos] Received: {
+[2026-02-03T11:45:56Z] [macos] Received: {
+[2026-02-03T11:46:14Z] [macos] ==============================================
+[2026-02-03T11:46:14Z] [macos] NATS Subscriber Starting
+[2026-02-03T11:46:14Z] [macos] Platform: macos
+[2026-02-03T11:46:14Z] [macos] NATS Server: 100.115.186.91:4222
+[2026-02-03T11:46:14Z] [macos] ==============================================
+[2026-02-03T11:46:14Z] [macos] Subscribing to zephyr.nightly.new...
+[2026-02-03T11:46:17Z] [macos] Received: {"version":"0.1.4","pub_date":"2026-02-02T15:06:19.761Z","platforms":["darwin-aarch64","linux-x86_64","linux-aarch64","windows-x86_64"],"channel":"nightly","detected_at":"2026-02-03T11:46:17Z"}
+[2026-02-03T11:46:17Z] [macos] Received: {"version":"0.1.4","pub_date":"2026-02-02T15:06:19.761Z","platforms":["darwin-aarch64","linux-x86_64","linux-aarch64","windows-x86_64"],"channel":"nightly","detected_at":"2026-02-03T11:46:17Z"}
+[2026-02-03T11:46:17Z] [macos] New version detected: 0.1.4
+[2026-02-03T11:46:17Z] [macos] New version detected: 0.1.4
+[2026-02-03T11:46:17Z] [macos] Triggering macos tests...
+[2026-02-03T11:46:17Z] [macos] Triggering macos tests...
+==============================================
+  Zephyr Agency Nightly Test Pipeline
+==============================================
+
+==============================================
+  Zephyr Agency Nightly Test Pipeline
+==============================================
+
+Time: Tue  3 Feb 2026 12:46:18 CET
+Time: Tue  3 Feb 2026 12:46:18 CET
+Platform: Darwin arm64
+
+Platform: Darwin arm64
+
+=== Step 1: Version Check ===
+=== Step 1: Version Check ===
+New version available: 0.1.4
+New version available: 0.1.4
+
+
+=== Step 2: Download ===
+=== Step 2: Download ===
+Checking for latest version...
+Checking for latest version...
+Latest version: 0.1.4
+Downloading: Zephyr Agency_0.1.4_aarch64.dmg
+URL: https://cdn.crabnebula.app/download/zephyr-cloud/zephyr-agency/latest/Zephyr%20Agency_0.1.4_aarch64.dmg?channel=nightly
+Output: /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+
+Latest version: 0.1.4
+Downloading: Zephyr Agency_0.1.4_aarch64.dmg
+URL: https://cdn.crabnebula.app/download/zephyr-cloud/zephyr-agency/latest/Zephyr%20Agency_0.1.4_aarch64.dmg?channel=nightly
+Output: /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+
+                                                                           0.0%                                                                           0.0%                                                                           0.9%                                                                           0.8%#                                                                          1.5%#                                                                          1.9%##                                                                         3.8%####                                                                       6.7%####                                                                       6.1%######                                                                     9.3%#####                                                                      8.1%##########                                                                13.9%#######                                                                   10.5%#############                                                             18.8%#########                                                                 13.7%###############                                                           21.2%###########                                                               16.0%###################                                                       27.8%##############                                                            20.5%#######################                                                   32.1%################                                                          22.2%#########################                                                 35.8%###################                                                       26.4%###########################                                               38.3%######################                                                    30.8%##############################                                            42.5%##################################                                        48.0%#######################                                                   32.7%####################################                                      50.3%#########################                                                 35.6%########################################                                  56.2%###########################                                               38.6%###########################################                               59.8%##############################                                            42.6%#############################################                             63.5%#################################                                         46.2%###############################################                           66.5%####################################                                      50.1%##################################################                        70.7%#######################################                                   54.3%######################################################                    75.1%#########################################                                 57.7%#########################################################                 80.2%############################################                              61.2%#############################################                             63.6%###########################################################               83.1%#################################################                         68.3%###############################################################           88.5%###################################################                       71.6%##################################################################        92.8%######################################################                    75.3%#####################################################################     97.2%######################################################################## 100.0%
+
+Download complete: /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+-rw-r--r--@ 1 ydun.io  staff   152M  3 Feb 12:46 /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+
+To mount: hdiutil attach "/Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg"
+########################################################                  78.8%Download complete
+
+=== Step 3: Install ===
+############################################################              83.8%=== Zephyr Agency macOS Installer ===
+DMG: /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+Install to: /Applications
+
+Closing any running instance...
+###############################################################           88.6%##################################################################        91.8%#####################################################################     95.9%#######################################################################   99.3%######################################################################## 100.0%
+
+Download complete: /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+-rw-r--r--@ 1 ydun.io  staff   152M  3 Feb 12:46 /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+
+To mount: hdiutil attach "/Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg"
+Download complete
+
+=== Step 3: Install ===
+=== Zephyr Agency macOS Installer ===
+DMG: /Users/ydun.io/Q-A/projects/zephyr-agency/automation/downloads/Zephyr Agency_0.1.4_aarch64.dmg
+Install to: /Applications
+
+Closing any running instance...
+Mounting DMG...
+Mounting DMG...
+ERROR: Installation failed
+ERROR: Installation failed

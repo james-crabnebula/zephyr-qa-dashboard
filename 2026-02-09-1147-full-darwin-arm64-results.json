@@ -1,0 +1,448 @@
+{
+  "schema_version": "2.0.0",
+  "timestamp": "2026-02-09T11:47:31.211Z",
+  "app_version": "0.1.4-58a7392",
+  "platform": "Darwin-arm64",
+  "suite": "full",
+  "browser": "Chrome/144.0.7559.97",
+  "duration_seconds": 49.3,
+  "stats": {
+    "total": 43,
+    "passed": 37,
+    "failed": 0,
+    "skipped": 6,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "749f3103e18e881f1146-bc59a8ab2303d457262b",
+      "title": "AUTH-08: shows user avatar when authenticated",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 40,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-83e4b78e1d42e02405b8",
+      "title": "AUTH-08: Sign In button not visible when authenticated",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 12,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-2191bdcd0f7578f9197c",
+      "title": "AUTH-09: user menu opens on click",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 581,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-36d85c365cdda55fcec9",
+      "title": "AUTH-09: user menu shows user info",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 20,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-9b901ab4afd7e483e43c",
+      "title": "AUTH-01: Sign In button visible when unauthenticated",
+      "file": "full/authentication.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-862ab2b90171d44a8419",
+      "title": "AUTH-11: protected routes require authentication",
+      "file": "full/authentication.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-f860aa64d1dea734aa66",
+      "title": "can access Specialists when authenticated",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 1549,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-5b094b57d6f97cc0e67d",
+      "title": "can access Knowledge when authenticated",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 1551,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-cb835382d5b23eb3ede1",
+      "title": "can access Workflows when authenticated",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 1552,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "749f3103e18e881f1146-a8fd1f20c059ad44699d",
+      "title": "can access Tasks when authenticated",
+      "file": "full/authentication.spec.js",
+      "status": "passed",
+      "duration_ms": 1547,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "d6b434ade25ab9246196-7e7bb036b8c67977055d",
+      "title": "KNOW-01: navigates to /knowledge",
+      "file": "full/knowledge.spec.js",
+      "status": "passed",
+      "duration_ms": 1549,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "d6b434ade25ab9246196-c6e2eec0f1bfacdbb01a",
+      "title": "KNOW-01: shows page header or content",
+      "file": "full/knowledge.spec.js",
+      "status": "passed",
+      "duration_ms": 1550,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "d6b434ade25ab9246196-9ad88cf09e39488a37d0",
+      "title": "KNOW-02: shows empty state or plot list",
+      "file": "full/knowledge.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "d6b434ade25ab9246196-65483715d49841b22999",
+      "title": "KNOW-06: shows categories or organization",
+      "file": "full/knowledge.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "d6b434ade25ab9246196-0e005ba5e51babb273aa",
+      "title": "KNOW-03: page has create capability indicator",
+      "file": "full/knowledge.spec.js",
+      "status": "passed",
+      "duration_ms": 1548,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9f9bf317982635af77c5-6c1dd2497a94dff7d85b",
+      "title": "SET-01: can open Settings from user menu",
+      "file": "full/settings.spec.js",
+      "status": "passed",
+      "duration_ms": 1097,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9f9bf317982635af77c5-043ea0adbdd207e6ef58",
+      "title": "SET-13: can close Settings with Escape key",
+      "file": "full/settings.spec.js",
+      "status": "passed",
+      "duration_ms": 1211,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9f9bf317982635af77c5-cf19f2ca6e299168658e",
+      "title": "SET-02: Settings has all sections",
+      "file": "full/settings.spec.js",
+      "status": "passed",
+      "duration_ms": 878,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9f9bf317982635af77c5-0feb92062c1a30cf2ea6",
+      "title": "SET-03: Details section accessible",
+      "file": "full/settings.spec.js",
+      "status": "passed",
+      "duration_ms": 1224,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9f9bf317982635af77c5-d04e021838e9e34d4b8b",
+      "title": "SET-07: Connections section accessible",
+      "file": "full/settings.spec.js",
+      "status": "passed",
+      "duration_ms": 1251,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9f9bf317982635af77c5-0c92118bab2963af69f0",
+      "title": "SET-10: Personal section accessible",
+      "file": "full/settings.spec.js",
+      "status": "passed",
+      "duration_ms": 1212,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9d0d577301004ae6df2f-6e1db2051e72fd157f20",
+      "title": "SPEC-01: navigates to /specialists",
+      "file": "full/specialists.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9d0d577301004ae6df2f-457cc9054ad37656a95b",
+      "title": "SPEC-01: shows page content",
+      "file": "full/specialists.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9d0d577301004ae6df2f-d381d6c77f075fcd2b4c",
+      "title": "SPEC-03: page has search or filter capability",
+      "file": "full/specialists.spec.js",
+      "status": "passed",
+      "duration_ms": 1553,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9d0d577301004ae6df2f-0dec0979a9857a233556",
+      "title": "SPEC-04: may have Local Only toggle",
+      "file": "full/specialists.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9d0d577301004ae6df2f-daefcf020476ec5131c9",
+      "title": "SPEC-02: shows specialists or empty state",
+      "file": "full/specialists.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "9d0d577301004ae6df2f-c9f7eba2a966530061d2",
+      "title": "SPEC-06: page has create capability",
+      "file": "full/specialists.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-690ee109c8a3501f84d0",
+      "title": "TASK-01: navigates to /tasks",
+      "file": "full/tasks.spec.js",
+      "status": "passed",
+      "duration_ms": 1547,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-2b562544e686d9e42d87",
+      "title": "TASK-01: shows task-related content",
+      "file": "full/tasks.spec.js",
+      "status": "passed",
+      "duration_ms": 1550,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-162b0739317b27871a1e",
+      "title": "TASK-02: shows Kanban columns or board structure",
+      "file": "full/tasks.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-dc6d15443a73800fb5f0",
+      "title": "TASK-02: page has visible board content",
+      "file": "full/tasks.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-094304641b2582248cd4",
+      "title": "TASK-03: shows counts or empty indicators",
+      "file": "full/tasks.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-fe1fb74a14956f809dbe",
+      "title": "TASK-04: can create a task",
+      "file": "full/tasks.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-bcdb80b48798f2805a52",
+      "title": "TASK-05: task card displays info",
+      "file": "full/tasks.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-4a7aedda95e7349db360",
+      "title": "TASK-06: tasks can be dragged between columns",
+      "file": "full/tasks.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-967ca182f468cfaefed4",
+      "title": "TASK-07: clicking task opens detail view",
+      "file": "full/tasks.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "bb8e2e0146025b615a47-902ad6b1b27ea1aecfbf",
+      "title": "board is visible at current window size",
+      "file": "full/tasks.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7f62ff5711ac156091be-813bd01e19681ce09321",
+      "title": "WORK-01: navigates to /workflow",
+      "file": "full/workflows.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7f62ff5711ac156091be-d705643d88adf2d64a58",
+      "title": "WORK-01: shows workflow content",
+      "file": "full/workflows.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7f62ff5711ac156091be-47fc343eed03b516e600",
+      "title": "WORK-02: shows Quick Start guide or workflow list",
+      "file": "full/workflows.spec.js",
+      "status": "passed",
+      "duration_ms": 1545,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7f62ff5711ac156091be-332cc9da9c522c237b4a",
+      "title": "WORK-04: page has creation or editor capability",
+      "file": "full/workflows.spec.js",
+      "status": "passed",
+      "duration_ms": 1551,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7f62ff5711ac156091be-1471c12182947417abd1",
+      "title": "WORK-07: page may have import functionality",
+      "file": "full/workflows.spec.js",
+      "status": "passed",
+      "duration_ms": 1546,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7f62ff5711ac156091be-2d77ab0bb79704e47ef0",
+      "title": "WORK-09: page has refresh or reload capability",
+      "file": "full/workflows.spec.js",
+      "status": "passed",
+      "duration_ms": 1548,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    }
+  ]
+}

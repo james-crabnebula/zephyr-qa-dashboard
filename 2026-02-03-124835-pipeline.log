@@ -1,0 +1,26 @@
+=== Step 1: Version Check ===
+Skipping version check (--skip-download)
+
+=== Step 2: Download (skipped) ===
+
+=== Step 3: Install (skipped) ===
+
+=== Step 4: Run Tests ===
+App: /Applications/Zephyr Agency.app
+Closing any running instance...
+Launching app with CDP on port 9222...
+Waiting for CDP endpoint...
+CDP ready after 2s
+Browser: Chrome/144.0.7559.97
+
+Running smoke test...
+Smoke test: PASSED
+
+=== Step 5: Cleanup & Results ===
+Closing app...
+
+Results saved to: /Users/ydun.io/Q-A/projects/zephyr-agency/results/2026-02-03-124835-results.json
+
+==============================================
+  Pipeline Complete: PASSED
+==============================================

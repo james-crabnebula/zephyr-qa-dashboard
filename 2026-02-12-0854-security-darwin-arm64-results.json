@@ -1,0 +1,158 @@
+{
+  "schema_version": "2.0.0",
+  "timestamp": "2026-02-12T08:54:55.146Z",
+  "app_version": "0.1.4-80b9f15",
+  "platform": "Darwin-arm64",
+  "suite": "security",
+  "browser": "unknown",
+  "duration_seconds": 147.4,
+  "stats": {
+    "total": 14,
+    "passed": 10,
+    "failed": 2,
+    "skipped": 2,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "c58ec2feca3e84d0b80b-8a2a98a4f464a762104e",
+      "title": "SEC-01: XSS payload in task description must NOT execute",
+      "file": "regressions/security.regression.spec.js",
+      "status": "timedOut",
+      "duration_ms": 60298,
+      "error_message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-security.regre-07c73-escription-must-NOT-execute-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-security.regre-07c73-escription-must-NOT-execute-headless/trace.zip"
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-8a2a98a4f464a762104e",
+      "title": "SEC-01: XSS payload in task description must NOT execute",
+      "file": "regressions/security.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 3732,
+      "error_message": "Error: Task description field must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  61 |       // Find description/content field\n  62 |       const descField = await page.$('textarea, [contenteditable=\"true\"], input[placeholder*=\"description\"], input[placeholder*=\"task\"]');\n> 63 |       expect(descField, 'Task description field must exist').toBeTruthy();\n     |                                                              ^\n  64 |\n  65 |       // Inject XSS payload - this is the EXACT payload from the security report\n  66 |       const xssPayload = '<img src=x onerror=\"window.XSS_EXECUTED=true\">';\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/security.regression.spec.js:63:62",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-security.regre-07c73-escription-must-NOT-execute-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-security.regre-07c73-escription-must-NOT-execute-headed/trace.zip"
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e8dfb0f4de67ec3b6b0a",
+      "title": "SEC-02: QR auth code must NOT contain IP address",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 6083,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e8dfb0f4de67ec3b6b0a",
+      "title": "SEC-02: QR auth code must NOT contain IP address",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 6049,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e0102df52f801d6a2383",
+      "title": "SEC-03: offline messages must persist after restart",
+      "file": "regressions/security.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e0102df52f801d6a2383",
+      "title": "SEC-03: offline messages must persist after restart",
+      "file": "regressions/security.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-9301599ab86768ba6389",
+      "title": "SEC-04: email signup flow must NOT return 403",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 21599,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-9301599ab86768ba6389",
+      "title": "SEC-04: email signup flow must NOT return 403",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 21633,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-414b8cfa713ad5022fce",
+      "title": "SEC-05: tasks must NOT be visible across workspaces",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7316,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-414b8cfa713ad5022fce",
+      "title": "SEC-05: tasks must NOT be visible across workspaces",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7349,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-41cfa45b0652885b72d0",
+      "title": "SEC-06: GitHub token link must NOT expose ACL errors in console",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4650,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-41cfa45b0652885b72d0",
+      "title": "SEC-06: GitHub token link must NOT expose ACL errors in console",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4683,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-c6b6ad4b3da698786981",
+      "title": "SEC-07: API key inputs must have autocomplete=\"off\"",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2000,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-c6b6ad4b3da698786981",
+      "title": "SEC-07: API key inputs must have autocomplete=\"off\"",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2016,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    }
+  ]
+}

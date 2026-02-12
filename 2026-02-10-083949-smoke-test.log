@@ -1,0 +1,52 @@
+=== Zephyr Agency Smoke Test ===
+
+Test 1: CDP Connection...
+  ✓ Connected to CDP
+
+Test 2: Page Access...
+  ✓ Found 1 page(s)
+
+Test 3: Page Content...
+  ✓ URL: http://tauri.localhost/workspace/zephyr/chat
+  ✓ Title: Zephyr Agency
+
+Test 4: DOM Elements...
+  ✓ DOM loaded with content
+
+Test 5: Screenshot...
+  ✓ Saved: smoke-test-1770709195182.png
+
+=== Results ===
+{
+  "timestamp": "2026-02-10T07:39:54.810Z",
+  "status": "passed",
+  "tests": [
+    {
+      "name": "CDP Connection",
+      "status": "passed"
+    },
+    {
+      "name": "Page Access",
+      "status": "passed"
+    },
+    {
+      "name": "Page Content",
+      "status": "passed"
+    },
+    {
+      "name": "DOM Elements",
+      "status": "passed"
+    },
+    {
+      "name": "Screenshot",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "screenshot": "smoke-test-1770709195182.png",
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0
+  }
+}

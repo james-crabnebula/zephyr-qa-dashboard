@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-02-09T15:34:17Z",
+  "pipeline_version": "1.0.0",
+  "platform": "Darwin-arm64",
+  "app_path": "/Applications/Zephyr Agency.app",
+  "browser_version": "Chrome/144.0.7559.97",
+  "smoke_status": "failed",
+  "regression_status": "skipped",
+  "logs": {
+    "pipeline": "2026-02-09-163411-pipeline.log",
+    "smoke_test": "2026-02-09-163411-smoke-test.log",
+    "regressions": "2026-02-09-163411-regressions.log"
+  }
+}

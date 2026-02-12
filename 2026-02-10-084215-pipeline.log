@@ -1,0 +1,41 @@
+=== Step 1: Version Check ===
+New version available: 0.1.4-d1b149a
+
+=== Step 2: Download ===
+Download complete
+
+=== Step 3: Install ===
+Installation complete
+
+=== Step 4: Run Tests ===
+App: /Applications/Zephyr Agency.app
+Closing any running instance...
+Launching app with CDP on port 9222...
+Waiting for CDP endpoint...
+CDP ready after 5s
+Browser: Chrome/144.0.7559.97
+
+Running smoke test...
+Smoke test: PASSED
+
+Running regression tests...
+Regression tests: FAILED (see /Users/ydun.io/q-a/projects/zephyr-agency/results/2026-02-10-084215-regressions.log)
+
+Ingesting Playwright results into structured JSON + SQLite...
+Reading: /Users/ydun.io/q-a/projects/zephyr-agency/e2e-test/test-results.json
+Processing: 8 top-level suites
+Flattened: 33 tests (9 passed, 16 failed, 8 skipped)
+Written: /Users/ydun.io/q-a/projects/zephyr-agency/results/2026-02-10-0744-full-darwin-arm64-results.json
+Database: /Users/ydun.io/q-a/projects/zephyr-agency/results/qa.db
+Inserted: build=7, run=7, tests=33
+Done.
+
+=== Step 5: Cleanup & Results ===
+Closing app...
+
+Results saved to: /Users/ydun.io/q-a/projects/zephyr-agency/results/2026-02-10-084215-results.json
+
+==============================================
+  Pipeline Complete: FAILURES DETECTED
+  Smoke: passed | Regressions: failed
+==============================================

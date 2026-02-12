@@ -1,0 +1,348 @@
+{
+  "schema_version": "2.0.0",
+  "timestamp": "2026-02-09T13:34:21.426Z",
+  "app_version": "0.1.4-58a7392",
+  "platform": "Darwin-arm64",
+  "suite": "regressions",
+  "browser": "Chrome/Version 1.58.2",
+  "duration_seconds": 130.9,
+  "stats": {
+    "total": 33,
+    "passed": 23,
+    "failed": 2,
+    "skipped": 8,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "68a300ba9781c3843ef8-d2274e8c9d4392fb2314",
+      "title": "AUTH-01: unauthenticated users cannot see channel content",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 3703,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"handle@13ffa5b67467ccd401f0e616f4ae2fd9\", \"_type\": \"ElementHandle\"}\u001b[39m\n\n  34 |       // Verify no message input is accessible\n  35 |       const messageInput = await page.$('textarea, [contenteditable=\"true\"], input[placeholder*=\"message\"], input[placeholder*=\"chat\"]');\n> 36 |       expect(messageInput).toBeNull();\n     |                            ^\n  37 |\n  38 |       // Take screenshot for evidence\n  39 |       await zephyr.screenshot('auth-01-unauthenticated-state');\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:36:28",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-be2812912eccc57d56c1",
+      "title": "AUTH-01: unauthenticated users cannot access protected routes",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 37419,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "68a300ba9781c3843ef8-495c91b1e420de14684c",
+      "title": "AUTH-03: Auth0 signup does not redirect to 403",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 18004,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "68a300ba9781c3843ef8-42f8680eea622274110f",
+      "title": "AUTH-04: Google OAuth popup is responsive",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 17887,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "68a300ba9781c3843ef8-64288bf9a1d9bbdc93b3",
+      "title": "AUTH-02: sign-in dialog is centred in window (Win11)",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-d9150c27830bb5197038",
+      "title": "CHAT-11: messages persist after page reload",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3965,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-22e25a662e412b2e0278",
+      "title": "CHAT-01: section pages do not show \"New Chat\" as title",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 6123,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-5a6f99657ba1709d7162",
+      "title": "CHAT-08: disconnect banner does not flicker",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4534,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-218d7bb0730131c8b0ff",
+      "title": "CHAT-03: chat input has meaningful placeholder and send button",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1543,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-c19433c490db1de147c5",
+      "title": "CHAT-06: AI responds to sent messages",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-aa09e6c5c8c41670cfaf",
+      "title": "INST-05: sidebar collapse toggle responds to clicks",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 81,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-9781f233803f10b4ebc0",
+      "title": "INST-04: Linux app launches successfully",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-96bda0d70b8d509ee9f1",
+      "title": "INST-06: fullscreen mode does not break window layout (Win11)",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-7f4c02d38d5c0865d930",
+      "title": "KNOW-06: knowledge sidebar items have count badges",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1614,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-4b69d1a117f6b196f342",
+      "title": "KNOW-07: empty state text and options match expected design",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1643,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-a01e9a87108fd1274144",
+      "title": "KNOW-01: knowledge icon is visible in sidebar",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1595,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-28125b6eff03b1e7d4e9",
+      "title": "SET-08: Package Manager Browse tab does not show registry error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 4070,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  46 |         const content = await page.textContent('body');\n  47 |         const hasRegistryError = content.toLowerCase().includes('registry unavailable');\n> 48 |         expect(hasRegistryError).toBe(false);\n     |                                  ^\n  49 |\n  50 |         await zephyr.screenshot('set-08-package-manager');\n  51 |       }\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/settings.regression.spec.js:48:34",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-8d4f054a3f9d050ef15a",
+      "title": "SET-09: GitHub token settings link does not throw ACL error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3888,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-7239a0a8e385c2788d53",
+      "title": "SET-06: Billing section has real content or clear unavailable state",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2774,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-59fd3df0eed733ff94f9",
+      "title": "SET-02: Settings has expected number of sections",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2305,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-7462f4e911224d79a66b",
+      "title": "SET-04: dark theme sidebar is legible (Win11)",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-d50d18f108f80151466f",
+      "title": "SPEC-04: displayed specialist counts match actual rendered items",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1540,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-b28654e661f8beac4b39",
+      "title": "SPEC-06: Create Specialist shows creation form or wizard",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3602,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-452e44b4a124cd368484",
+      "title": "SPEC-07: specialist creation view has category or filter options",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3577,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-bdc332702c7eddfda1d3",
+      "title": "TASK-03: task board does not show unexpected pre-existing tasks",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1548,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-b0fa25b26ebd008a474a",
+      "title": "TASK-05: task cards can be dragged between Kanban columns",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-afb6195f1f91aefd32fc",
+      "title": "TASK-09: tasks have a delete option",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-cdfb38317ca36d0e2595",
+      "title": "TASK-10: tasks load while offline",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-7f1715d0f6ea4dd08273",
+      "title": "WORK-05: visual editor fits at multiple viewport sizes",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 3316,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-76dc7e80270485cd92b9",
+      "title": "WORK-06: Execute button provides feedback when clicked",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1530,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-f136db4299b543c92a07",
+      "title": "WORK-02: Quick Start step 2 matches actual interaction method",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1534,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-ede54f958db745055e6a",
+      "title": "WORK-03: double-click on palette item creates exactly one node",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1535,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-c0296b5ac8fc5af05609",
+      "title": "WORK-04: refresh success toast is fully opaque",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 1537,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    }
+  ]
+}

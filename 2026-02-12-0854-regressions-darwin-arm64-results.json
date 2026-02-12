@@ -1,0 +1,818 @@
+{
+  "schema_version": "2.0.0",
+  "timestamp": "2026-02-12T08:54:53.971Z",
+  "app_version": "0.1.4-80b9f15",
+  "platform": "Darwin-arm64",
+  "suite": "regressions",
+  "browser": "unknown",
+  "duration_seconds": 436.4,
+  "stats": {
+    "total": 80,
+    "passed": 32,
+    "failed": 30,
+    "skipped": 18,
+    "flaky": 0
+  },
+  "tests": [
+    {
+      "id": "68a300ba9781c3843ef8-a2a0263832e44b1f624e",
+      "title": "AUTH-01: unauthenticated users cannot see channel content",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 5466,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"handle@409ebb016fed86435192d5bdc9bc6e52\", \"_type\": \"ElementHandle\"}\u001b[39m\n\n  34 |       // Verify no message input is accessible\n  35 |       const messageInput = await page.$('textarea, [contenteditable=\"true\"], input[placeholder*=\"message\"], input[placeholder*=\"chat\"]');\n> 36 |       expect(messageInput).toBeNull();\n     |                            ^\n  37 |\n  38 |       // Take screenshot for evidence\n  39 |       await zephyr.screenshot('auth-01-unauthenticated-state');\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:36:28",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headless/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-a2a0263832e44b1f624e",
+      "title": "AUTH-01: unauthenticated users cannot see channel content",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 1949,
+      "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  22 |       // Sign out\n  23 |       const signedOut = await zephyr.signOut();\n> 24 |       expect(signedOut).toBe(true);\n     |                         ^\n  25 |\n  26 |       // Wait for UI to update\n  27 |       await page.waitForTimeout(1000);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:24:25",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-892b6f788cfaddf2fb73",
+      "title": "AUTH-01: unauthenticated users cannot access protected routes",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 21615,
+      "error_message": "Error: Action controls visible on /specialists when unauthenticated\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"handle@f470a1238732fc308837a8707d5fda40\", \"_type\": \"ElementHandle\"}\u001b[39m\n\n  57 |         // Action controls must NOT be accessible when unauthenticated\n  58 |         const actionBtn = await page.$('button:has-text(\"Create\"), button:has-text(\"New\"), button:has-text(\"Add\"), button:has-text(\"Execute\")');\n> 59 |         expect(actionBtn, `Action controls visible on ${route} when unauthenticated`).toBeNull();\n     |                                                                                       ^\n  60 |\n  61 |         await zephyr.screenshot(`auth-01-unauth-${route.replace('/', '')}`);\n  62 |       }\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:59:87",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headless/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-892b6f788cfaddf2fb73",
+      "title": "AUTH-01: unauthenticated users cannot access protected routes",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 6615,
+      "error_message": "Error: Action controls visible on /specialists when unauthenticated\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31m{\"_guid\": \"handle@073948452f339be8ea62eb4343117070\", \"_type\": \"ElementHandle\"}\u001b[39m\n\n  57 |         // Action controls must NOT be accessible when unauthenticated\n  58 |         const actionBtn = await page.$('button:has-text(\"Create\"), button:has-text(\"New\"), button:has-text(\"Add\"), button:has-text(\"Execute\")');\n> 59 |         expect(actionBtn, `Action controls visible on ${route} when unauthenticated`).toBeNull();\n     |                                                                                       ^\n  60 |\n  61 |         await zephyr.screenshot(`auth-01-unauth-${route.replace('/', '')}`);\n  62 |       }\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:59:87",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-e193928eda5749704146",
+      "title": "AUTH-03: Auth0 signup does not redirect to 403",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 19983,
+      "error_message": "Error: OAuth login button must be visible on login screen\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  100 |       // Click OAuth button\n  101 |       const oauthBtn = await page.$('button:has-text(\"Log in with OAuth\")');\n> 102 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();\n      |                                                                                  ^\n  103 |       await oauthBtn.click();\n  104 |       await page.waitForTimeout(2000);\n  105 |\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:102:82",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headless/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-e193928eda5749704146",
+      "title": "AUTH-03: Auth0 signup does not redirect to 403",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 19998,
+      "error_message": "Error: OAuth login button must be visible on login screen\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  100 |       // Click OAuth button\n  101 |       const oauthBtn = await page.$('button:has-text(\"Log in with OAuth\")');\n> 102 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();\n      |                                                                                  ^\n  103 |       await oauthBtn.click();\n  104 |       await page.waitForTimeout(2000);\n  105 |\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:102:82",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-7c61366c228306136d87",
+      "title": "AUTH-04: Google OAuth popup is responsive",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 19465,
+      "error_message": "Error: OAuth login button must be visible on login screen\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  164 |\n  165 |       const oauthBtn = await page.$('button:has-text(\"Log in with OAuth\")');\n> 166 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();\n      |                                                                                  ^\n  167 |       await oauthBtn.click();\n  168 |       await page.waitForTimeout(2000);\n  169 |\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:166:82",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headless/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-7c61366c228306136d87",
+      "title": "AUTH-04: Google OAuth popup is responsive",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 19564,
+      "error_message": "Error: OAuth login button must be visible on login screen\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  164 |\n  165 |       const oauthBtn = await page.$('button:has-text(\"Log in with OAuth\")');\n> 166 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();\n      |                                                                                  ^\n  167 |       await oauthBtn.click();\n  168 |       await page.waitForTimeout(2000);\n  169 |\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:166:82",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/trace.zip"
+    },
+    {
+      "id": "68a300ba9781c3843ef8-717075c1f6e6baf05545",
+      "title": "AUTH-02: sign-in dialog is centred in window (Win11)",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "68a300ba9781c3843ef8-717075c1f6e6baf05545",
+      "title": "AUTH-02: sign-in dialog is centred in window (Win11)",
+      "file": "regressions/auth.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-b242ea52538e82daa0ef",
+      "title": "CHAT-11: messages persist after page reload",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 19714,
+      "error_message": "Error: Sent message must appear in chat\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"E2E regression test 1770885861171\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[39m\n\u001b[31m    Welcome to ZephyrChannelsDMsManageSpecialistsKnowledge GardenProjectsWorkflowsTasksjames@crabnebula.dev@jamesNew ChatStart a conversationTry one of these suggestions or type your own messageHelp me plan a product launchReview this code for improvementsCreate a marketing strategyDesign a color paletteWrite unit tests for this functionExplain how React 19 works····\u001b[39m\n\u001b[31m\"\u001b[39m\n\n  45 |       // Check message appears\n  46 |       const bodyBefore = await page.textContent('body');\n> 47 |       expect(bodyBefore, 'Sent message must appear in chat').toContain(testMessage);\n     |                                                              ^\n  48 |\n  49 |       // Capture current URL/hash before reload (the conversation we're now in)\n  50 |       const chatUrl = page.url();\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/chat.regression.spec.js:47:62",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headless/trace.zip"
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-b242ea52538e82daa0ef",
+      "title": "CHAT-11: messages persist after page reload",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 19698,
+      "error_message": "Error: Sent message must appear in chat\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected substring: \u001b[32m\"E2E regression test 1770886082270\"\u001b[39m\nReceived string:    \u001b[31m\"\u001b[39m\n\u001b[31m    Welcome to ZephyrChannelsDMsManageSpecialistsKnowledge GardenProjectsWorkflowsTasksjames@crabnebula.dev@jamesNew ChatStart a conversationTry one of these suggestions or type your own messageHelp me plan a product launchReview this code for improvementsCreate a marketing strategyDesign a color paletteWrite unit tests for this functionExplain how React 19 works····\u001b[39m\n\u001b[31m\"\u001b[39m\n\n  45 |       // Check message appears\n  46 |       const bodyBefore = await page.textContent('body');\n> 47 |       expect(bodyBefore, 'Sent message must appear in chat').toContain(testMessage);\n     |                                                              ^\n  48 |\n  49 |       // Capture current URL/hash before reload (the conversation we're now in)\n  50 |       const chatUrl = page.url();\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/chat.regression.spec.js:47:62",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/trace.zip"
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-49ab456a221d3cfc1602",
+      "title": "CHAT-01: section pages do not show \"New Chat\" as title",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7767,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-49ab456a221d3cfc1602",
+      "title": "CHAT-01: section pages do not show \"New Chat\" as title",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7752,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-ee6b857783a11d271841",
+      "title": "CHAT-08: disconnect banner does not flicker",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5017,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-ee6b857783a11d271841",
+      "title": "CHAT-08: disconnect banner does not flicker",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5018,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-146fa92df41ab1cedf04",
+      "title": "CHAT-03: chat input has meaningful placeholder and send button",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2516,
+      "error_message": "Error: CHAT-03 BUG: Chat placeholder \"Start a task or invite some people to a chat with @\" mentions tasks. This is a chat input, not task input.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  182 |\n  183 |       // This assertion should FAIL if placeholder wrongly mentions tasks\n> 184 |       expect(mentionsTasks, `CHAT-03 BUG: Chat placeholder \"${placeholder}\" mentions tasks. This is a chat input, not task input.`).toBe(false);\n      |                                                                                                                                     ^\n  185 |\n  186 |       // Should have messaging-related placeholder\n  187 |       expect(mentionsMessaging, `CHAT-03 BUG: Chat placeholder \"${placeholder}\" doesn't reference messaging. Users won't know this is for chat.`).toBe(true);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/chat.regression.spec.js:184:133",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headless/trace.zip"
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-146fa92df41ab1cedf04",
+      "title": "CHAT-03: chat input has meaningful placeholder and send button",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2533,
+      "error_message": "Error: CHAT-03 BUG: Chat placeholder \"Start a task or invite some people to a chat with @\" mentions tasks. This is a chat input, not task input.\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  182 |\n  183 |       // This assertion should FAIL if placeholder wrongly mentions tasks\n> 184 |       expect(mentionsTasks, `CHAT-03 BUG: Chat placeholder \"${placeholder}\" mentions tasks. This is a chat input, not task input.`).toBe(false);\n      |                                                                                                                                     ^\n  185 |\n  186 |       // Should have messaging-related placeholder\n  187 |       expect(mentionsMessaging, `CHAT-03 BUG: Chat placeholder \"${placeholder}\" doesn't reference messaging. Users won't know this is for chat.`).toBe(true);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/chat.regression.spec.js:184:133",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/trace.zip"
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-14fa15f2eb9a997b7cb5",
+      "title": "CHAT-06: AI responds to sent messages",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "3070824e4b3108ddd0bb-14fa15f2eb9a997b7cb5",
+      "title": "CHAT-06: AI responds to sent messages",
+      "file": "regressions/chat.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-bdbe1c920da2796c35dd",
+      "title": "INST-05: sidebar collapse toggle responds to clicks",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 715,
+      "error_message": "Error: Sidebar toggle button must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  31 |       const menuBtn = await page.$('[class*=\"hamburger\"], [class*=\"menu-toggle\"]');\n  32 |       const toggle = toggleBtn || menuBtn;\n> 33 |       expect(toggle, 'Sidebar toggle button must exist').not.toBeNull();\n     |                                                              ^\n  34 |\n  35 |       // Get sidebar width before toggle\n  36 |       const widthBefore = await page.evaluate(() => {\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/installation.regression.spec.js:33:62",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headless/trace.zip"
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-bdbe1c920da2796c35dd",
+      "title": "INST-05: sidebar collapse toggle responds to clicks",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 715,
+      "error_message": "Error: Sidebar toggle button must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  31 |       const menuBtn = await page.$('[class*=\"hamburger\"], [class*=\"menu-toggle\"]');\n  32 |       const toggle = toggleBtn || menuBtn;\n> 33 |       expect(toggle, 'Sidebar toggle button must exist').not.toBeNull();\n     |                                                              ^\n  34 |\n  35 |       // Get sidebar width before toggle\n  36 |       const widthBefore = await page.evaluate(() => {\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/installation.regression.spec.js:33:62",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/trace.zip"
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-97deafca6c5f5877d569",
+      "title": "INST-04: Linux app launches successfully",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-97deafca6c5f5877d569",
+      "title": "INST-04: Linux app launches successfully",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-79ef79a575fb5687d2e1",
+      "title": "INST-06: fullscreen mode does not break window layout (Win11)",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "389ee0085f4fb1e3c473-79ef79a575fb5687d2e1",
+      "title": "INST-06: fullscreen mode does not break window layout (Win11)",
+      "file": "regressions/installation.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-50039d26780070700186",
+      "title": "KNOW-06: knowledge sidebar items have count badges",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2398,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-50039d26780070700186",
+      "title": "KNOW-06: knowledge sidebar items have count badges",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2399,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-9a77faad98cce7a8c3a8",
+      "title": "KNOW-07: empty state text and options match expected design",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2566,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-9a77faad98cce7a8c3a8",
+      "title": "KNOW-07: empty state text and options match expected design",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2566,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-372e9c3e5f7990145296",
+      "title": "KNOW-01: knowledge icon is visible in sidebar",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2333,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "763b43adf8bc5a82b2ca-372e9c3e5f7990145296",
+      "title": "KNOW-01: knowledge icon is visible in sidebar",
+      "file": "regressions/knowledge.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2333,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-8a2a98a4f464a762104e",
+      "title": "SEC-01: XSS payload in task description must NOT execute",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5950,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-8a2a98a4f464a762104e",
+      "title": "SEC-01: XSS payload in task description must NOT execute",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 6016,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e8dfb0f4de67ec3b6b0a",
+      "title": "SEC-02: QR auth code must NOT contain IP address",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 22966,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e8dfb0f4de67ec3b6b0a",
+      "title": "SEC-02: QR auth code must NOT contain IP address",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 22751,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e0102df52f801d6a2383",
+      "title": "SEC-03: offline messages must persist after restart",
+      "file": "regressions/security.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-e0102df52f801d6a2383",
+      "title": "SEC-03: offline messages must persist after restart",
+      "file": "regressions/security.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-9301599ab86768ba6389",
+      "title": "SEC-04: email signup flow must NOT return 403",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 21301,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-9301599ab86768ba6389",
+      "title": "SEC-04: email signup flow must NOT return 403",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 21633,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-414b8cfa713ad5022fce",
+      "title": "SEC-05: tasks must NOT be visible across workspaces",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7333,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-414b8cfa713ad5022fce",
+      "title": "SEC-05: tasks must NOT be visible across workspaces",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7282,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-41cfa45b0652885b72d0",
+      "title": "SEC-06: GitHub token link must NOT expose ACL errors in console",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4633,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-41cfa45b0652885b72d0",
+      "title": "SEC-06: GitHub token link must NOT expose ACL errors in console",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4649,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-c6b6ad4b3da698786981",
+      "title": "SEC-07: API key inputs must have autocomplete=\"off\"",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2000,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "c58ec2feca3e84d0b80b-c6b6ad4b3da698786981",
+      "title": "SEC-07: API key inputs must have autocomplete=\"off\"",
+      "file": "regressions/security.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 2000,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-783fa6758c1ec6c23feb",
+      "title": "SET-08: Package Manager Browse tab does not show registry error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 7283,
+      "error_message": "Error: SET-08 BUG: Package registry shows \"unavailable\" error\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  56 |\n  57 |       // This assertion should FAIL until SET-08 is fixed\n> 58 |       expect(hasRegistryError, 'SET-08 BUG: Package registry shows \"unavailable\" error').toBe(false);\n     |                                                                                          ^\n  59 |\n  60 |       await zephyr.screenshot('set-08-package-manager');\n  61 |       await zephyr.closeModal();\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/settings.regression.spec.js:58:90",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headless/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-783fa6758c1ec6c23feb",
+      "title": "SET-08: Package Manager Browse tab does not show registry error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 7299,
+      "error_message": "Error: SET-08 BUG: Package registry shows \"unavailable\" error\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  56 |\n  57 |       // This assertion should FAIL until SET-08 is fixed\n> 58 |       expect(hasRegistryError, 'SET-08 BUG: Package registry shows \"unavailable\" error').toBe(false);\n     |                                                                                          ^\n  59 |\n  60 |       await zephyr.screenshot('set-08-package-manager');\n  61 |       await zephyr.closeModal();\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/settings.regression.spec.js:58:90",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-578aa457d0b42c746654",
+      "title": "SET-09: GitHub token settings link does not throw ACL error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7200,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-578aa457d0b42c746654",
+      "title": "SET-09: GitHub token settings link does not throw ACL error",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 7182,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-28dbfafbc19d7e11a8eb",
+      "title": "SET-06: Billing section has real content or clear unavailable state",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5684,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-28dbfafbc19d7e11a8eb",
+      "title": "SET-06: Billing section has real content or clear unavailable state",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5666,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-fb0a409db0e53319ecd1",
+      "title": "SET-02: Settings has expected number of sections",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 4465,
+      "error_message": "Error: SET-02 BUG: Found 2 unexpected tab(s): Language, Sandbox. Total tabs: 11, Expected: 9\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n  219 |         `SET-02 BUG: Found ${foundUnexpected.length} unexpected tab(s): ${foundUnexpected.map(t => t.text).join(', ')}. ` +\n  220 |         `Total tabs: ${allTabs.length}, Expected: ${expectedTabs.length}`\n> 221 |       ).toBe(0);\n      |         ^\n  222 |\n  223 |       // Also verify expected tabs are present\n  224 |       expect(foundExpected.length, `Expected tabs missing. Found: ${foundExpected.length}/${expectedTabs.length}`).toBeGreaterThanOrEqual(7);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/settings.regression.spec.js:221:9",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headless/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-fb0a409db0e53319ecd1",
+      "title": "SET-02: Settings has expected number of sections",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 4432,
+      "error_message": "Error: SET-02 BUG: Found 2 unexpected tab(s): Language, Sandbox. Total tabs: 11, Expected: 9\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n  219 |         `SET-02 BUG: Found ${foundUnexpected.length} unexpected tab(s): ${foundUnexpected.map(t => t.text).join(', ')}. ` +\n  220 |         `Total tabs: ${allTabs.length}, Expected: ${expectedTabs.length}`\n> 221 |       ).toBe(0);\n      |         ^\n  222 |\n  223 |       // Also verify expected tabs are present\n  224 |       expect(foundExpected.length, `Expected tabs missing. Found: ${foundExpected.length}/${expectedTabs.length}`).toBeGreaterThanOrEqual(7);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/settings.regression.spec.js:221:9",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-settings.regre-9f4b0-expected-number-of-sections-headed/trace.zip"
+    },
+    {
+      "id": "7d89ab36824939f787b5-8c7ef5fc221db8dd5fff",
+      "title": "SET-04: dark theme sidebar is legible (Win11)",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "7d89ab36824939f787b5-8c7ef5fc221db8dd5fff",
+      "title": "SET-04: dark theme sidebar is legible (Win11)",
+      "file": "regressions/settings.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-368ffa355d740ac62006",
+      "title": "SPEC-04: displayed specialist counts match actual rendered items",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2348,
+      "error_message": "Error: Count badges must be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  64 |       // Specialists page must render items and show count badges\n  65 |       expect(countResult.renderedItems, 'Specialist items must be rendered').toBeGreaterThan(0);\n> 66 |       expect(countResult.badges.length, 'Count badges must be visible').toBeGreaterThan(0);\n     |                                                                         ^\n  67 |\n  68 |       // BUG DETECTION: Check if ANY badge is wildly inaccurate\n  69 |       // A badge claiming 15 when only 3 items exist is a 5x discrepancy - that's the bug\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/specialists.regression.spec.js:66:73",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headless/trace.zip"
+    },
+    {
+      "id": "90668fd0e59431ce5596-368ffa355d740ac62006",
+      "title": "SPEC-04: displayed specialist counts match actual rendered items",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2349,
+      "error_message": "Error: Count badges must be visible\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  64 |       // Specialists page must render items and show count badges\n  65 |       expect(countResult.renderedItems, 'Specialist items must be rendered').toBeGreaterThan(0);\n> 66 |       expect(countResult.badges.length, 'Count badges must be visible').toBeGreaterThan(0);\n     |                                                                         ^\n  67 |\n  68 |       // BUG DETECTION: Check if ANY badge is wildly inaccurate\n  69 |       // A badge claiming 15 when only 3 items exist is a 5x discrepancy - that's the bug\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/specialists.regression.spec.js:66:73",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/trace.zip"
+    },
+    {
+      "id": "90668fd0e59431ce5596-d2958e32bd9b21e311cc",
+      "title": "SPEC-06: Create Specialist shows creation form or wizard",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4965,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-d2958e32bd9b21e311cc",
+      "title": "SPEC-06: Create Specialist shows creation form or wizard",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4983,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-9d6760c8d056ede5445b",
+      "title": "SPEC-07: specialist creation view has category or filter options",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4883,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "90668fd0e59431ce5596-9d6760c8d056ede5445b",
+      "title": "SPEC-07: specialist creation view has category or filter options",
+      "file": "regressions/specialists.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 4883,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-f403b03898dd8bce8dac",
+      "title": "TASK-03: task board does not show unexpected pre-existing tasks",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2282,
+      "error_message": "Error: Task board must display kanban columns\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  40 |         content.toLowerCase().includes('progress') ||\n  41 |         content.toLowerCase().includes('done');\n> 42 |       expect(hasKanbanColumns, 'Task board must display kanban columns').toBe(true);\n     |                                                                          ^\n  43 |\n  44 |       // Count task cards\n  45 |       const taskCards = await page.$$('[class*=\"task\" i][class*=\"card\" i], [class*=\"kanban\"] [class*=\"card\" i], [class*=\"board\"] [class*=\"card\" i], [class*=\"item\" i][draggable=\"true\"]');\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/tasks.regression.spec.js:42:74",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headless/trace.zip"
+    },
+    {
+      "id": "28d01d8a8cae09354e06-f403b03898dd8bce8dac",
+      "title": "TASK-03: task board does not show unexpected pre-existing tasks",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2283,
+      "error_message": "Error: Task board must display kanban columns\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  40 |         content.toLowerCase().includes('progress') ||\n  41 |         content.toLowerCase().includes('done');\n> 42 |       expect(hasKanbanColumns, 'Task board must display kanban columns').toBe(true);\n     |                                                                          ^\n  43 |\n  44 |       // Count task cards\n  45 |       const taskCards = await page.$$('[class*=\"task\" i][class*=\"card\" i], [class*=\"kanban\"] [class*=\"card\" i], [class*=\"board\"] [class*=\"card\" i], [class*=\"item\" i][draggable=\"true\"]');\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/tasks.regression.spec.js:42:74",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/trace.zip"
+    },
+    {
+      "id": "28d01d8a8cae09354e06-c13902a2364344976b05",
+      "title": "TASK-05: task cards can be dragged between Kanban columns",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-c13902a2364344976b05",
+      "title": "TASK-05: task cards can be dragged between Kanban columns",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-3c8d549b12c562d7968f",
+      "title": "TASK-09: tasks have a delete option",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-3c8d549b12c562d7968f",
+      "title": "TASK-09: tasks have a delete option",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-f34de5095d88d689bbf5",
+      "title": "TASK-10: tasks load while offline",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "28d01d8a8cae09354e06-f34de5095d88d689bbf5",
+      "title": "TASK-10: tasks load while offline",
+      "file": "regressions/tasks.regression.spec.js",
+      "status": "skipped",
+      "duration_ms": 0,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-93fd58c92ca7196279ea",
+      "title": "WORK-05: visual editor fits at multiple viewport sizes",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5265,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-93fd58c92ca7196279ea",
+      "title": "WORK-05: visual editor fits at multiple viewport sizes",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "passed",
+      "duration_ms": 5282,
+      "error_message": null,
+      "screenshot": null,
+      "trace": null
+    },
+    {
+      "id": "cea68c453c9728803a03-546841ecc6441571729c",
+      "title": "WORK-06: Execute button provides feedback when clicked",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2249,
+      "error_message": "Error: Execute/Run/Start button must be visible on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  64 |       // Find Execute button\n  65 |       const executeBtn = await page.$('button:has-text(\"Execute\"), button:has-text(\"Run\"), button:has-text(\"Start\")');\n> 66 |       expect(executeBtn, 'Execute/Run/Start button must be visible on workflow page').not.toBeNull();\n     |                                                                                           ^\n  67 |\n  68 |       // Record the page state before clicking\n  69 |       const bodyBefore = await page.textContent('body');\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:66:91",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headless/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-546841ecc6441571729c",
+      "title": "WORK-06: Execute button provides feedback when clicked",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2233,
+      "error_message": "Error: Execute/Run/Start button must be visible on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  64 |       // Find Execute button\n  65 |       const executeBtn = await page.$('button:has-text(\"Execute\"), button:has-text(\"Run\"), button:has-text(\"Start\")');\n> 66 |       expect(executeBtn, 'Execute/Run/Start button must be visible on workflow page').not.toBeNull();\n     |                                                                                           ^\n  67 |\n  68 |       // Record the page state before clicking\n  69 |       const bodyBefore = await page.textContent('body');\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:66:91",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-a651a512f98e252a51d8",
+      "title": "WORK-02: Quick Start step 2 matches actual interaction method",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2332,
+      "error_message": "Error: Quick Start section must be visible on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  114 |       // Quick Start section must be visible\n  115 |       const hasQuickStart = content.toLowerCase().includes('quick start') || content.toLowerCase().includes('get started');\n> 116 |       expect(hasQuickStart, 'Quick Start section must be visible on workflow page').toBe(true);\n      |                                                                                     ^\n  117 |\n  118 |       // Step 2 should NOT mention \"drag\" — dragging doesn't work, only clicking does\n  119 |       const hasDragInstruction =\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:116:85",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headless/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-a651a512f98e252a51d8",
+      "title": "WORK-02: Quick Start step 2 matches actual interaction method",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2332,
+      "error_message": "Error: Quick Start section must be visible on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n  114 |       // Quick Start section must be visible\n  115 |       const hasQuickStart = content.toLowerCase().includes('quick start') || content.toLowerCase().includes('get started');\n> 116 |       expect(hasQuickStart, 'Quick Start section must be visible on workflow page').toBe(true);\n      |                                                                                     ^\n  117 |\n  118 |       // Step 2 should NOT mention \"drag\" — dragging doesn't work, only clicking does\n  119 |       const hasDragInstruction =\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:116:85",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-95e19ac64834b8083bd0",
+      "title": "WORK-03: double-click on palette item creates exactly one node",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2315,
+      "error_message": "Error: Visual Editor link must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  130 |       // Navigate to visual editor (use force click to avoid interception)\n  131 |       const editorLink = page.locator('text=\"Visual Editor\"').first();\n> 132 |       expect(await editorLink.count(), 'Visual Editor link must exist').toBeGreaterThan(0);\n      |                                                                         ^\n  133 |       await editorLink.click({ force: true, timeout: 5000 });\n  134 |       await page.waitForTimeout(1000);\n  135 |\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:132:73",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headless/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-95e19ac64834b8083bd0",
+      "title": "WORK-03: double-click on palette item creates exactly one node",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2333,
+      "error_message": "Error: Visual Editor link must exist\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n  130 |       // Navigate to visual editor (use force click to avoid interception)\n  131 |       const editorLink = page.locator('text=\"Visual Editor\"').first();\n> 132 |       expect(await editorLink.count(), 'Visual Editor link must exist').toBeGreaterThan(0);\n      |                                                                         ^\n  133 |       await editorLink.click({ force: true, timeout: 5000 });\n  134 |       await page.waitForTimeout(1000);\n  135 |\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:132:73",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-4c780f861c4452f39430",
+      "title": "WORK-04: refresh success toast is fully opaque",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2298,
+      "error_message": "Error: Refresh button must exist on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  162 |       // Find refresh button\n  163 |       const refreshBtn = await page.$('button[aria-label*=\"Refresh\" i], button[aria-label*=\"refresh\" i], button[aria-label*=\"Reload\" i], button:has-text(\"Refresh\")');\n> 164 |       expect(refreshBtn, 'Refresh button must exist on workflow page').not.toBeNull();\n      |                                                                            ^\n  165 |\n  166 |       await refreshBtn.click();\n  167 |       await page.waitForTimeout(1000);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:164:76",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headless/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headless/trace.zip"
+    },
+    {
+      "id": "cea68c453c9728803a03-4c780f861c4452f39430",
+      "title": "WORK-04: refresh success toast is fully opaque",
+      "file": "regressions/workflows.regression.spec.js",
+      "status": "failed",
+      "duration_ms": 2315,
+      "error_message": "Error: Refresh button must exist on workflow page\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mnot\u001b[2m.\u001b[22mtoBeNull\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n  162 |       // Find refresh button\n  163 |       const refreshBtn = await page.$('button[aria-label*=\"Refresh\" i], button[aria-label*=\"refresh\" i], button[aria-label*=\"Reload\" i], button:has-text(\"Refresh\")');\n> 164 |       expect(refreshBtn, 'Refresh button must exist on workflow page').not.toBeNull();\n      |                                                                            ^\n  165 |\n  166 |       await refreshBtn.click();\n  167 |       await page.waitForTimeout(1000);\n    at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:164:76",
+      "screenshot": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/test-failed-1.png",
+      "trace": "/Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/trace.zip"
+    }
+  ]
+}

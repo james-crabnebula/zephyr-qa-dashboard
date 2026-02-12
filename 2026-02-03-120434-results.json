@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-02-03T11:04:38Z",
+  "pipeline_version": "1.0.0",
+  "platform": "Darwin-arm64",
+  "app_path": "/Applications/Zephyr Agency Nightly.app",
+  "browser_version": "Chrome/144.0.7559.97",
+  "test_status": "passed",
+  "logs": {
+    "pipeline": "2026-02-03-120434-pipeline.log",
+    "smoke_test": "2026-02-03-120434-smoke-test.log"
+  }
+}

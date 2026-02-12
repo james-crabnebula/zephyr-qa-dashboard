@@ -1,0 +1,513 @@
+[dotenv@17.2.3] injecting env (8) from .env -- tip: 📡 add observability to secrets: https://dotenvx.com/ops
+
+Running 33 tests using 1 worker
+
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 👥 sync secrets across teammates & machines: https://dotenvx.com/ops
+  ✘   1 [headed] › regressions/auth.regression.spec.js:18:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot see channel content (3.7s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+
+  ✘   2 [headed] › regressions/auth.regression.spec.js:45:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot access protected routes (17.9s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🛠️  run anywhere with `dotenvx run -- yourcommand`
+
+  ✘   3 [headed] › regressions/auth.regression.spec.js:74:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-03: Auth0 signup does not redirect to 403 (16.5s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+
+  ✘   4 [headed] › regressions/auth.regression.spec.js:140:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-04: Google OAuth popup is responsive (16.4s)
+  -   5 [headed] › regressions/auth.regression.spec.js:206:10 › Authentication Regressions › Platform-Specific (SKIP) › AUTH-02: sign-in dialog is centred in window (Win11)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+
+  ✘   6 [headed] › regressions/chat.regression.spec.js:22:5 › Chat Regressions › Message Persistence (CRITICAL) › CHAT-11: messages persist after page reload (16.3s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+  ✓   7 [headed] › regressions/chat.regression.spec.js:78:5 › Chat Regressions › Page Titles (MEDIUM) › CHAT-01: section pages do not show "New Chat" as title (6.1s)
+  ✓   8 [headed] › regressions/chat.regression.spec.js:114:5 › Chat Regressions › Connection Banner (MEDIUM) › CHAT-08: disconnect banner does not flicker (4.5s)
+  ✘   9 [headed] › regressions/chat.regression.spec.js:157:5 › Chat Regressions › Chat Input UX (LOW) › CHAT-03: chat input has meaningful placeholder and send button (1.6s)
+  -  10 [headed] › regressions/chat.regression.spec.js:182:10 › Chat Regressions › Deferred — Phase 3 (SKIP) › CHAT-06: AI responds to sent messages
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+  ✘  11 [headed] › regressions/installation.regression.spec.js:20:5 › Installation Regressions › Sidebar Toggle (LOW) › INST-05: sidebar collapse toggle responds to clicks (117ms)
+  -  12 [headed] › regressions/installation.regression.spec.js:78:10 › Installation Regressions › Platform-Specific (SKIP) › INST-04: Linux app launches successfully
+  -  13 [headed] › regressions/installation.regression.spec.js:88:10 › Installation Regressions › Platform-Specific (SKIP) › INST-06: fullscreen mode does not break window layout (Win11)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+  ✓  14 [headed] › regressions/knowledge.regression.spec.js:22:5 › Knowledge Garden Regressions › Sidebar Counts (MEDIUM) › KNOW-06: knowledge sidebar items have count badges (1.6s)
+  ✓  15 [headed] › regressions/knowledge.regression.spec.js:60:5 › Knowledge Garden Regressions › Empty State (MEDIUM) › KNOW-07: empty state text and options match expected design (1.6s)
+  ✓  16 [headed] › regressions/knowledge.regression.spec.js:84:5 › Knowledge Garden Regressions › Icon Rendering (LOW) › KNOW-01: knowledge icon is visible in sidebar (1.6s)
+  ✘  17 [headed] › regressions/settings.regression.spec.js:27:5 › Settings Regressions › Package Manager (HIGH) › SET-08: Package Manager Browse tab does not show registry error (4.0s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ✅ audit secrets and track compliance: https://dotenvx.com/ops
+  ✓  18 [headed] › regressions/settings.regression.spec.js:58:5 › Settings Regressions › GitHub Token (HIGH) › SET-09: GitHub token settings link does not throw ACL error (3.8s)
+  ✓  19 [headed] › regressions/settings.regression.spec.js:99:5 › Settings Regressions › Billing Section (MEDIUM) › SET-06: Billing section has real content or clear unavailable state (2.8s)
+  ✓  20 [headed] › regressions/settings.regression.spec.js:136:5 › Settings Regressions › Section Count (LOW) › SET-02: Settings has expected number of sections (2.3s)
+  -  21 [headed] › regressions/settings.regression.spec.js:162:10 › Settings Regressions › Platform-Specific (SKIP) › SET-04: dark theme sidebar is legible (Win11)
+  ✘  22 [headed] › regressions/specialists.regression.spec.js:22:5 › Specialists Regressions › List Counts (MEDIUM) › SPEC-04: displayed specialist counts match actual rendered items (1.6s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+  ✓  23 [headed] › regressions/specialists.regression.spec.js:71:5 › Specialists Regressions › Creation Flow (MEDIUM) › SPEC-06: Create Specialist shows creation form or wizard (3.6s)
+  ✓  24 [headed] › regressions/specialists.regression.spec.js:99:5 › Specialists Regressions › Creation Categories (LOW) › SPEC-07: specialist creation view has category or filter options (3.6s)
+  ✘  25 [headed] › regressions/tasks.regression.spec.js:23:5 › Tasks Regressions › Empty State (MEDIUM) › TASK-03: task board does not show unexpected pre-existing tasks (1.6s)
+  -  26 [headed] › regressions/tasks.regression.spec.js:48:10 › Tasks Regressions › Blocked — Feature Incomplete (SKIP) › TASK-05: task cards can be dragged between Kanban columns
+  -  27 [headed] › regressions/tasks.regression.spec.js:58:10 › Tasks Regressions › Blocked — Feature Incomplete (SKIP) › TASK-09: tasks have a delete option
+  -  28 [headed] › regressions/tasks.regression.spec.js:67:10 › Tasks Regressions › Blocked — Feature Incomplete (SKIP) › TASK-10: tasks load while offline
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+  ✓  29 [headed] › regressions/workflows.regression.spec.js:24:5 › Workflows Regressions › Visual Editor Layout (MEDIUM) › WORK-05: visual editor fits at multiple viewport sizes (3.3s)
+  ✘  30 [headed] › regressions/workflows.regression.spec.js:61:5 › Workflows Regressions › Execute Feedback (MEDIUM) › WORK-06: Execute button provides feedback when clicked (1.6s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+  ✘  31 [headed] › regressions/workflows.regression.spec.js:108:5 › Workflows Regressions › Quick Start Text (LOW) › WORK-02: Quick Start step 2 matches actual interaction method (1.6s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🗂️ backup and recover secrets: https://dotenvx.com/ops
+  ✘  32 [headed] › regressions/workflows.regression.spec.js:127:5 › Workflows Regressions › Node Creation (LOW) › WORK-03: double-click on palette item creates exactly one node (1.6s)
+[dotenv@17.2.3] injecting env (0) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+  ✘  33 [headed] › regressions/workflows.regression.spec.js:159:5 › Workflows Regressions › Refresh Dialog (LOW) › WORK-04: refresh success toast is fully opaque (1.6s)
+
+
+  1) [headed] › regressions/auth.regression.spec.js:18:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot see channel content 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeNull[2m()[22m
+
+    Received: [31m{"_guid": "handle@7891210f538ade05b1457f890443389f", "_type": "ElementHandle"}[39m
+
+      34 |       // Verify no message input is accessible
+      35 |       const messageInput = await page.$('textarea, [contenteditable="true"], input[placeholder*="message"], input[placeholder*="chat"]');
+    > 36 |       expect(messageInput).toBeNull();
+         |                            ^
+      37 |
+      38 |       // Take screenshot for evidence
+      39 |       await zephyr.screenshot('auth-01-unauthenticated-state');
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:36:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-2661c--cannot-see-channel-content-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [headed] › regressions/auth.regression.spec.js:45:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot access protected routes 
+
+    Error: Action controls visible on /specialists when unauthenticated
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeNull[2m()[22m
+
+    Received: [31m{"_guid": "handle@fda5ff578c5b514d2d76adc7035c8266", "_type": "ElementHandle"}[39m
+
+      57 |         // Action controls must NOT be accessible when unauthenticated
+      58 |         const actionBtn = await page.$('button:has-text("Create"), button:has-text("New"), button:has-text("Add"), button:has-text("Execute")');
+    > 59 |         expect(actionBtn, `Action controls visible on ${route} when unauthenticated`).toBeNull();
+         |                                                                                       ^
+      60 |
+      61 |         await zephyr.screenshot(`auth-01-unauth-${route.replace('/', '')}`);
+      62 |       }
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:59:87
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-aaf87-not-access-protected-routes-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [headed] › regressions/auth.regression.spec.js:74:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-03: Auth0 signup does not redirect to 403 
+
+    Error: OAuth login button must be visible on login screen
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBeNull[2m()[22m
+
+    Received: [31mnull[39m
+
+      100 |       // Click OAuth button
+      101 |       const oauthBtn = await page.$('button:has-text("Log in with OAuth")');
+    > 102 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();
+          |                                                                                  ^
+      103 |       await oauthBtn.click();
+      104 |       await page.waitForTimeout(2000);
+      105 |
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:102:82
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-15773-up-does-not-redirect-to-403-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [headed] › regressions/auth.regression.spec.js:140:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-04: Google OAuth popup is responsive 
+
+    Error: OAuth login button must be visible on login screen
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBeNull[2m()[22m
+
+    Received: [31mnull[39m
+
+      164 |
+      165 |       const oauthBtn = await page.$('button:has-text("Log in with OAuth")');
+    > 166 |       expect(oauthBtn, 'OAuth login button must be visible on login screen').not.toBeNull();
+          |                                                                                  ^
+      167 |       await oauthBtn.click();
+      168 |       await page.waitForTimeout(2000);
+      169 |
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/auth.regression.spec.js:166:82
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-auth.regressio-8f652-e-OAuth-popup-is-responsive-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [headed] › regressions/chat.regression.spec.js:22:5 › Chat Regressions › Message Persistence (CRITICAL) › CHAT-11: messages persist after page reload 
+
+    Error: Sent message must appear in chat
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"E2E regression test 1770651361264"[39m
+    Received string:    [31m"[39m
+    [31m    Welcome to ZephyrChannelsNew ChannelNew ChannelNew ChannelNew ChannelNew new newNew ChannelNew ChannelNew ChannelNew ChannelNew ChannelSolid.jsJOIN ME (deutsch)New ChannelNew ChannelmarketingDavid and JohannbobNew ChannelNew ChannelNew ChannelNew ChannelNew ChannelNew ChannelDMsManageSpecialistsKnowledge GardenWorkflowsTasksjames@crabnebula.dev@jamesNew ChatStart a conversationTry one of these suggestions or type your own messageHelp me plan a product launchReview this code for improvementsCreate a marketing strategyDesign a color paletteWrite unit tests for this functionExplain how React 19 works····[39m
+    [31m"[39m
+
+      45 |       // Check message appears
+      46 |       const bodyBefore = await page.textContent('body');
+    > 47 |       expect(bodyBefore, 'Sent message must appear in chat').toContain(testMessage);
+         |                                                              ^
+      48 |
+      49 |       // Capture current URL/hash before reload (the conversation we're now in)
+      50 |       const chatUrl = page.url();
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/chat.regression.spec.js:47:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-chat.regressio-91c51-s-persist-after-page-reload-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [headed] › regressions/chat.regression.spec.js:157:5 › Chat Regressions › Chat Input UX (LOW) › CHAT-03: chat input has meaningful placeholder and send button 
+
+    Error: Placeholder should reference messaging, not tasks
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoContain[2m([22m[32mexpected[39m[2m) // indexOf[22m
+
+    Expected substring: [32m"message"[39m
+    Received string:    [31m"start a task or invite some people to a chat with @"[39m
+
+      165 |       const placeholder = await messageInput.getAttribute('placeholder');
+      166 |       expect(placeholder, 'Chat input must have a placeholder').toBeTruthy();
+    > 167 |       expect(placeholder.toLowerCase(), 'Placeholder should reference messaging, not tasks').toContain('message');
+          |                                                                                              ^
+      168 |
+      169 |       // Find send button — should have send-related aria label, not ambiguous
+      170 |       const sendBtn = await page.$('button[aria-label*="send" i], button[aria-label*="Send"], button[class*="send"]');
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/chat.regression.spec.js:167:94
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-chat.regressio-1b5f9-placeholder-and-send-button-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [headed] › regressions/installation.regression.spec.js:20:5 › Installation Regressions › Sidebar Toggle (LOW) › INST-05: sidebar collapse toggle responds to clicks 
+
+    Error: Sidebar toggle button must exist
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBeNull[2m()[22m
+
+    Received: [31mnull[39m
+
+      31 |       const menuBtn = await page.$('[class*="hamburger"], [class*="menu-toggle"]');
+      32 |       const toggle = toggleBtn || menuBtn;
+    > 33 |       expect(toggle, 'Sidebar toggle button must exist').not.toBeNull();
+         |                                                              ^
+      34 |
+      35 |       // Get sidebar width before toggle
+      36 |       const widthBefore = await page.evaluate(() => {
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/installation.regression.spec.js:33:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-installation.r-3f973-e-toggle-responds-to-clicks-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [headed] › regressions/settings.regression.spec.js:27:5 › Settings Regressions › Package Manager (HIGH) › SET-08: Package Manager Browse tab does not show registry error 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mfalse[39m
+    Received: [31mtrue[39m
+
+      46 |         const content = await page.textContent('body');
+      47 |         const hasRegistryError = content.toLowerCase().includes('registry unavailable');
+    > 48 |         expect(hasRegistryError).toBe(false);
+         |                                  ^
+      49 |
+      50 |         await zephyr.screenshot('set-08-package-manager');
+      51 |       }
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/settings.regression.spec.js:48:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-settings.regre-8ee63-oes-not-show-registry-error-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [headed] › regressions/specialists.regression.spec.js:22:5 › Specialists Regressions › List Counts (MEDIUM) › SPEC-04: displayed specialist counts match actual rendered items 
+
+    Error: Count badges must be visible
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: > [32m0[39m
+    Received:   [31m0[39m
+
+      54 |       // Specialists page must render items and show count badges
+      55 |       expect(countResult.renderedItems, 'Specialist items must be rendered').toBeGreaterThan(0);
+    > 56 |       expect(countResult.badges.length, 'Count badges must be visible').toBeGreaterThan(0);
+         |                                                                         ^
+      57 |
+      58 |       // At least one badge should roughly match rendered item count
+      59 |       const badgeValues = countResult.badges.map(b => parseInt(b.text));
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/specialists.regression.spec.js:56:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-specialists.re-ea6eb-match-actual-rendered-items-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [headed] › regressions/tasks.regression.spec.js:23:5 › Tasks Regressions › Empty State (MEDIUM) › TASK-03: task board does not show unexpected pre-existing tasks 
+
+    Error: Task board must display kanban columns
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+      33 |         content.toLowerCase().includes('progress') ||
+      34 |         content.toLowerCase().includes('done');
+    > 35 |       expect(hasKanbanColumns, 'Task board must display kanban columns').toBe(true);
+         |                                                                          ^
+      36 |
+      37 |       // Kanban must have visible column containers
+      38 |       const columns = await page.$$('[class*="column" i], [class*="lane" i], [class*="kanban"] > div');
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/tasks.regression.spec.js:35:74
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-tasks.regressi-40c0d-expected-pre-existing-tasks-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [headed] › regressions/workflows.regression.spec.js:61:5 › Workflows Regressions › Execute Feedback (MEDIUM) › WORK-06: Execute button provides feedback when clicked 
+
+    Error: Execute/Run/Start button must be visible on workflow page
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBeNull[2m()[22m
+
+    Received: [31mnull[39m
+
+      64 |       // Find Execute button
+      65 |       const executeBtn = await page.$('button:has-text("Execute"), button:has-text("Run"), button:has-text("Start")');
+    > 66 |       expect(executeBtn, 'Execute/Run/Start button must be visible on workflow page').not.toBeNull();
+         |                                                                                           ^
+      67 |
+      68 |       // Record the page state before clicking
+      69 |       const bodyBefore = await page.textContent('body');
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:66:91
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-23b7d-vides-feedback-when-clicked-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [headed] › regressions/workflows.regression.spec.js:108:5 › Workflows Regressions › Quick Start Text (LOW) › WORK-02: Quick Start step 2 matches actual interaction method 
+
+    Error: Quick Start section must be visible on workflow page
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+
+    Expected: [32mtrue[39m
+    Received: [31mfalse[39m
+
+      114 |       // Quick Start section must be visible
+      115 |       const hasQuickStart = content.toLowerCase().includes('quick start') || content.toLowerCase().includes('get started');
+    > 116 |       expect(hasQuickStart, 'Quick Start section must be visible on workflow page').toBe(true);
+          |                                                                                     ^
+      117 |
+      118 |       // Step 2 should NOT mention "drag" — dragging doesn't work, only clicking does
+      119 |       const hasDragInstruction =
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:116:85
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-63176-s-actual-interaction-method-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [headed] › regressions/workflows.regression.spec.js:127:5 › Workflows Regressions › Node Creation (LOW) › WORK-03: double-click on palette item creates exactly one node 
+
+    Error: Visual Editor link must exist
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mtoBeGreaterThan[2m([22m[32mexpected[39m[2m)[22m
+
+    Expected: > [32m0[39m
+    Received:   [31m0[39m
+
+      130 |       // Navigate to visual editor (use force click to avoid interception)
+      131 |       const editorLink = page.locator('text="Visual Editor"').first();
+    > 132 |       expect(await editorLink.count(), 'Visual Editor link must exist').toBeGreaterThan(0);
+          |                                                                         ^
+      133 |       await editorLink.click({ force: true, timeout: 5000 });
+      134 |       await page.waitForTimeout(1000);
+      135 |
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:132:73
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-cafd8-em-creates-exactly-one-node-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [headed] › regressions/workflows.regression.spec.js:159:5 › Workflows Regressions › Refresh Dialog (LOW) › WORK-04: refresh success toast is fully opaque 
+
+    Error: Refresh button must exist on workflow page
+
+    [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBeNull[2m()[22m
+
+    Received: [31mnull[39m
+
+      162 |       // Find refresh button
+      163 |       const refreshBtn = await page.$('button[aria-label*="Refresh" i], button[aria-label*="refresh" i], button[aria-label*="Reload" i], button:has-text("Refresh")');
+    > 164 |       expect(refreshBtn, 'Refresh button must exist on workflow page').not.toBeNull();
+          |                                                                            ^
+      165 |
+      166 |       await refreshBtn.click();
+      167 |       await page.waitForTimeout(1000);
+        at /Users/ydun.io/Q-A/projects/zephyr-agency/e2e-test/regressions/workflows.regression.spec.js:164:76
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/regressions-workflows.regr-58ebb-ccess-toast-is-fully-opaque-headed/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14 failed
+    [headed] › regressions/auth.regression.spec.js:18:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot see channel content 
+    [headed] › regressions/auth.regression.spec.js:45:5 › Authentication Regressions › Content Protection (CRITICAL) › AUTH-01: unauthenticated users cannot access protected routes 
+    [headed] › regressions/auth.regression.spec.js:74:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-03: Auth0 signup does not redirect to 403 
+    [headed] › regressions/auth.regression.spec.js:140:5 › Authentication Regressions › Auth Flow (HIGH) › AUTH-04: Google OAuth popup is responsive 
+    [headed] › regressions/chat.regression.spec.js:22:5 › Chat Regressions › Message Persistence (CRITICAL) › CHAT-11: messages persist after page reload 
+    [headed] › regressions/chat.regression.spec.js:157:5 › Chat Regressions › Chat Input UX (LOW) › CHAT-03: chat input has meaningful placeholder and send button 
+    [headed] › regressions/installation.regression.spec.js:20:5 › Installation Regressions › Sidebar Toggle (LOW) › INST-05: sidebar collapse toggle responds to clicks 
+    [headed] › regressions/settings.regression.spec.js:27:5 › Settings Regressions › Package Manager (HIGH) › SET-08: Package Manager Browse tab does not show registry error 
+    [headed] › regressions/specialists.regression.spec.js:22:5 › Specialists Regressions › List Counts (MEDIUM) › SPEC-04: displayed specialist counts match actual rendered items 
+    [headed] › regressions/tasks.regression.spec.js:23:5 › Tasks Regressions › Empty State (MEDIUM) › TASK-03: task board does not show unexpected pre-existing tasks 
+    [headed] › regressions/workflows.regression.spec.js:61:5 › Workflows Regressions › Execute Feedback (MEDIUM) › WORK-06: Execute button provides feedback when clicked 
+    [headed] › regressions/workflows.regression.spec.js:108:5 › Workflows Regressions › Quick Start Text (LOW) › WORK-02: Quick Start step 2 matches actual interaction method 
+    [headed] › regressions/workflows.regression.spec.js:127:5 › Workflows Regressions › Node Creation (LOW) › WORK-03: double-click on palette item creates exactly one node 
+    [headed] › regressions/workflows.regression.spec.js:159:5 › Workflows Regressions › Refresh Dialog (LOW) › WORK-04: refresh success toast is fully opaque 
+  8 skipped
+  11 passed (2.2m)
