@@ -1,11 +1,12 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T12:02:58.261Z",
-  "total": 26,
+  "generated": "2026-02-12T13:46:36.139Z",
+  "total": 27,
   "categories": [
     "daily",
     "macos-feb12",
     "windows-feb12",
+    "ui-ux",
     "features",
     "bugs",
     "security",
@@ -15,6 +16,7 @@
     "daily": 3,
     "macos-feb12": 10,
     "windows-feb12": 1,
+    "ui-ux": 1,
     "features": 8,
     "bugs": 2,
     "security": 1,
@@ -281,6 +283,28 @@
         "0.1.4-80b9f15"
       ],
       "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "ui-ux-UI-UX-FINDINGS-CONSOLIDATED",
+      "title": "UI/UX Manual Testing - Consolidated Report",
+      "category": "ui-ux",
+      "date": "2026-02-12",
+      "path": "ui-ux/UI-UX-FINDINGS-CONSOLIDATED.md",
+      "file": "UI-UX-FINDINGS-CONSOLIDATED.md",
+      "tags": [
+        "ui",
+        "ux",
+        "manual",
+        "a11y",
+        "wcag",
+        "macos",
+        "windows",
+        "linux",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Alex Lohr, Cristián Vogel, Robin Van Boven",
       "status": "complete",
       "build_version": "0.1.4-80b9f15"
     },
