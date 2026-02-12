@@ -1,10 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T09:52:20.923Z",
-  "total": 25,
+  "generated": "2026-02-12T12:02:58.261Z",
+  "total": 26,
   "categories": [
     "daily",
     "macos-feb12",
+    "windows-feb12",
     "features",
     "bugs",
     "security",
@@ -13,6 +14,7 @@
   "category_counts": {
     "daily": 3,
     "macos-feb12": 10,
+    "windows-feb12": 1,
     "features": 8,
     "bugs": 2,
     "security": 1,
@@ -35,6 +37,24 @@
         "executive-summary"
       ],
       "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "windows-feb12-00-windows-differences",
+      "title": "Windows 12 Feb — Platform Differences",
+      "category": "windows-feb12",
+      "date": "2026-02-12",
+      "path": "windows-feb12/00-windows-differences.md",
+      "file": "00-windows-differences.md",
+      "tags": [
+        "windows",
+        "win11",
+        "automated",
+        "0.1.4-80b9f15",
+        "differences"
+      ],
+      "author": "Q (Automated) + James (Manual)",
       "status": "complete",
       "build_version": "0.1.4-80b9f15"
     },
