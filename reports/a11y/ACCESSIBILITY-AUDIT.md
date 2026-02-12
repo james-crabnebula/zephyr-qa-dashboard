@@ -1,12 +1,12 @@
 ---
-title: "Accessibility Audit (WCAG 2.1 AA)"
+title: "Accessibility Audit Report"
 date: 2026-02-12
 category: a11y
-tags: [accessibility, wcag, a11y, axe-core, 0.1.4-80b9f15]
+tags: [accessibility, wcag, a11y, axe-core, keyboard, screen-reader, 0.1.4-80b9f15]
 author: Q (Automated)
 status: complete
 build_version: 0.1.4-80b9f15
-platform: macOS-arm64
+platform: macOS arm64
 ---
 
 # Accessibility Audit Report
@@ -24,17 +24,21 @@ platform: macOS-arm64
 
 ## Executive Summary
 
-| Severity | Count |
-|----------|-------|
-| Critical | 7 |
-| Serious | 1 |
-| Moderate | 0 |
-| Minor | 0 |
-| **Total** | **8** |
+| Severity | Count | Notes |
+|----------|-------|-------|
+| Critical | 7 | `button-name` on 6 pages + Settings |
+| Serious | 1 | `label` in Settings |
+| Moderate | 0 | |
+| Minor | 0 | |
+| **Total** | **8** | Same issue repeated per page |
 
-**Verdict:** WCAG 2.1 AA compliance NOT achieved. Three criteria fail:
+**Note:** The 8 violations are the **same `button-name` issue** detected on each page (sidebar buttons are global). Unique issues: **2 axe violations** + **3 keyboard/focus issues** = **5 distinct problems**.
+
+**Verdict:** WCAG 2.1 AA compliance NOT achieved. Five criteria fail:
+- 1.3.1 Info and Relationships (form inputs missing labels)
 - 2.1.1 Keyboard (focus trap)
 - 2.4.1 Bypass Blocks (no skip link)
+- 2.4.7 Focus Visible (some elements lack focus state)
 - 4.1.2 Name, Role, Value (13 buttons without names)
 
 ---
@@ -48,7 +52,7 @@ platform: macOS-arm64
 | **Severity** | `CRITICAL` |
 | **WCAG** | 4.1.2 Name, Role, Value |
 | **Impact** | Screen reader users cannot identify button purpose |
-| **Count** | 13 buttons across all pages |
+| **Count** | 13 buttons in sidebar (same on all pages), 14 in Settings |
 | **Confidence** | HIGH — axe-core detected |
 
 **What's broken:** Icon-only buttons in the sidebar and navigation have no accessible names. Screen readers announce them as "button" with no indication of what they do.
