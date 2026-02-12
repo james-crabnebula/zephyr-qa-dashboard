@@ -1,9 +1,28 @@
 {
   "schema_version": "2.0.0",
-  "version": "0.1.4-58a7392",
-  "generated": "2026-02-09T13:34:51.159Z",
+  "version": "0.1.4-80b9f15",
+  "generated": "2026-02-12T09:25:57.891Z",
   "results": [
     "beast/2026-02-09-101956-regressions-linux-x64-results.json",
+    "2026-02-12-0854-smoke-darwin-arm64-results.json",
+    "2026-02-12-0854-security-darwin-arm64-results.json",
+    "2026-02-12-0854-regressions-darwin-arm64-results.json",
+    "2026-02-12-0854-baseline-darwin-arm64-results.json",
+    "2026-02-11-1409-regressions-windows-x64-results.json",
+    "2026-02-11-1407-smoke-windows-x64-results.json",
+    "2026-02-11-1310-smoke-windows-x64-results.json",
+    "2026-02-11-1310-regressions-windows-x64-results.json",
+    "2026-02-11-0900-regressions-linux-x64-results.json",
+    "2026-02-11-0731-regressions-darwin-arm64-results.json",
+    "2026-02-10-084215-results.json",
+    "2026-02-10-083949-results.json",
+    "2026-02-10-0744-full-darwin-arm64-results.json",
+    "2026-02-10-0742-full-darwin-arm64-results.json",
+    "2026-02-09-163441-results.json",
+    "2026-02-09-163411-results.json",
+    "2026-02-09-1537-full-darwin-arm64-results.json",
+    "2026-02-09-1534-full-darwin-arm64-results.json",
+    "2026-02-09-1417-regressions-scoreboard-darwin-arm64-results.json",
     "2026-02-09-1334-regressions-darwin-arm64-results.json",
     "2026-02-09-1147-full-darwin-arm64-results.json",
     "2026-02-03-124835-results.json",
@@ -12,6 +31,201 @@
   ],
   "automated": {
     "latest_runs": [
+      {
+        "timestamp": "2026-02-12T08:54:55.146Z",
+        "platform": "Darwin-arm64",
+        "suite": "security",
+        "status": "failed",
+        "total": 14,
+        "passed": 10,
+        "failed": 2,
+        "skipped": 2,
+        "flaky": 0,
+        "duration_seconds": 147.4,
+        "browser": "unknown",
+        "app_version": "0.1.4-80b9f15",
+        "source_json": "2026-02-12-0854-security-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-12T08:54:53.971Z",
+        "platform": "Darwin-arm64",
+        "suite": "regressions",
+        "status": "failed",
+        "total": 80,
+        "passed": 32,
+        "failed": 30,
+        "skipped": 18,
+        "flaky": 0,
+        "duration_seconds": 436.4,
+        "browser": "unknown",
+        "app_version": "0.1.4-80b9f15",
+        "source_json": "2026-02-12-0854-regressions-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-12T08:54:53.040Z",
+        "platform": "Darwin-arm64",
+        "suite": "baseline",
+        "status": "passed",
+        "total": 86,
+        "passed": 74,
+        "failed": 0,
+        "skipped": 12,
+        "flaky": 0,
+        "duration_seconds": 151.3,
+        "browser": "unknown",
+        "app_version": "0.1.4-80b9f15",
+        "source_json": "2026-02-12-0854-baseline-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-12T08:54:52.308Z",
+        "platform": "Darwin-arm64",
+        "suite": "smoke",
+        "status": "passed",
+        "total": 46,
+        "passed": 46,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 19.2,
+        "browser": "unknown",
+        "app_version": "0.1.4-80b9f15",
+        "source_json": "2026-02-12-0854-smoke-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-11T13:10:16.298Z",
+        "platform": "windows-x64",
+        "suite": "regressions",
+        "status": "failed",
+        "total": 66,
+        "passed": 12,
+        "failed": 38,
+        "skipped": 16,
+        "flaky": 0,
+        "duration_seconds": 106.9,
+        "browser": "unknown",
+        "app_version": "0.1.4-d642a1f",
+        "source_json": "2026-02-11-1310-regressions-windows-x64-results.json"
+      },
+      {
+        "timestamp": "2026-02-11T13:10:11.826Z",
+        "platform": "windows-x64",
+        "suite": "smoke",
+        "status": "passed",
+        "total": 46,
+        "passed": 46,
+        "failed": 0,
+        "skipped": 0,
+        "flaky": 0,
+        "duration_seconds": 14.5,
+        "browser": "unknown",
+        "app_version": "0.1.4-d642a1f",
+        "source_json": "2026-02-11-1310-smoke-windows-x64-results.json"
+      },
+      {
+        "timestamp": "2026-02-11T09:00:35.919Z",
+        "platform": "linux-x64",
+        "suite": "regressions",
+        "status": "failed",
+        "total": 33,
+        "passed": 4,
+        "failed": 21,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 434.7,
+        "browser": "unknown",
+        "app_version": "0.1.4-d642a1f",
+        "source_json": "2026-02-11-0900-regressions-linux-x64-results.json"
+      },
+      {
+        "timestamp": "2026-02-11T07:31:32.737Z",
+        "platform": "Darwin-arm64",
+        "suite": "regressions",
+        "status": "failed",
+        "total": 33,
+        "passed": 11,
+        "failed": 14,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 164.3,
+        "browser": "unknown",
+        "app_version": "0.1.4-d642a1f",
+        "source_json": "2026-02-11-0731-regressions-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-10T07:44:50.975Z",
+        "platform": "Darwin-arm64",
+        "suite": "full",
+        "status": "failed",
+        "total": 33,
+        "passed": 9,
+        "failed": 16,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 120.9,
+        "browser": "Chrome/144.0.7559.97",
+        "app_version": "0.1.4-d1b149a",
+        "source_json": "2026-02-10-0744-full-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-10T07:42:11.703Z",
+        "platform": "Darwin-arm64",
+        "suite": "full",
+        "status": "failed",
+        "total": 33,
+        "passed": 11,
+        "failed": 14,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 120.9,
+        "browser": "Chrome/144.0.7559.97",
+        "app_version": "unknown",
+        "source_json": "2026-02-10-0742-full-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-09T15:37:02.242Z",
+        "platform": "Darwin-arm64",
+        "suite": "full",
+        "status": "failed",
+        "total": 33,
+        "passed": 11,
+        "failed": 14,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 120.9,
+        "browser": "Chrome/144.0.7559.97",
+        "app_version": "0.1.4-58a7392",
+        "source_json": "2026-02-09-1537-full-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-09T15:34:17.227Z",
+        "platform": "Darwin-arm64",
+        "suite": "full",
+        "status": "failed",
+        "total": 33,
+        "passed": 11,
+        "failed": 14,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 142.6,
+        "browser": "Chrome/144.0.7559.97",
+        "app_version": "0.1.4-58a7392",
+        "source_json": "2026-02-09-1534-full-darwin-arm64-results.json"
+      },
+      {
+        "timestamp": "2026-02-09T14:17:00.581Z",
+        "platform": "Darwin-arm64",
+        "suite": "regressions-scoreboard",
+        "status": "failed",
+        "total": 33,
+        "passed": 11,
+        "failed": 14,
+        "skipped": 8,
+        "flaky": 0,
+        "duration_seconds": 129.2,
+        "browser": "Chrome/144.0.7559.97",
+        "app_version": "0.1.4-58a7392",
+        "source_json": "2026-02-09-1417-regressions-scoreboard-darwin-arm64-results.json"
+      },
       {
         "timestamp": "2026-02-09T13:34:21.426Z",
         "platform": "Darwin-arm64",
@@ -44,89 +258,29 @@
       }
     ],
     "test_summary": {
-      "total_runs": 2,
-      "versions_tested": 1,
-      "total_tests": 76,
-      "total_passed": 60,
-      "total_failed": 2,
-      "total_skipped": 14,
+      "total_runs": 15,
+      "versions_tested": 5,
+      "total_tests": 645,
+      "total_passed": 348,
+      "total_failed": 179,
+      "total_skipped": 118,
       "first_run": "2026-02-09T11:47:31.211Z",
-      "last_run": "2026-02-09T13:34:21.426Z"
+      "last_run": "2026-02-12T08:54:55.146Z"
     },
     "by_platform": {
       "Darwin-arm64": {
-        "timestamp": "2026-02-09T13:34:21.426Z",
+        "timestamp": "2026-02-12T08:54:55.146Z",
         "status": "failed",
-        "total": 33,
-        "passed": 23,
+        "total": 14,
+        "passed": 10,
         "failed": 2,
-        "skipped": 8,
-        "suite": "regressions",
-        "browser": "Chrome/Version 1.58.2",
-        "app_version": "0.1.4-58a7392"
+        "skipped": 2,
+        "suite": "security",
+        "browser": "unknown",
+        "app_version": "0.1.4-80b9f15"
       }
     }
   },
-  "manual": {
-    "date": "2026-02-03",
-    "version": "0.1.4",
-    "tester": "James Barclay",
-    "status": "complete",
-    "report_path": "docs/reports/2026-02-03-manual-testing-summary-v0.1.4.md",
-    "summary": {
-      "coverage": "70 tests, 7 suites",
-      "results": "6 pass, 1 blocked",
-      "issues": "2 HIGH, 2 MEDIUM, 10 LOW",
-      "headlines": [
-        "Tasks feature incomplete (HIGH)",
-        "Data persistence lost on sign-out (HIGH)",
-        "Packages registry unavailable (MEDIUM)",
-        "GitHub token save fails (MEDIUM)"
-      ],
-      "css_ux_notes": [
-        "CSS responsiveness issues in Specialists, Workflows",
-        "UX: No explicit save button, auto-saves on blur",
-        "UX: Local Only toggle icon same in both states",
-        "Visual: Billing shows '???', needs scroll to see logout"
-      ]
-    },
-    "suites": [
-      {
-        "name": "Chat",
-        "status": "pass",
-        "path": "docs/tests/01-chat.md"
-      },
-      {
-        "name": "Specialists",
-        "status": "pass",
-        "path": "docs/tests/02-specialists.md"
-      },
-      {
-        "name": "Knowledge",
-        "status": "pass",
-        "path": "docs/tests/03-knowledge.md"
-      },
-      {
-        "name": "Workflows",
-        "status": "pass",
-        "path": "docs/tests/04-workflows.md"
-      },
-      {
-        "name": "Tasks",
-        "status": "blocked",
-        "path": "docs/tests/05-tasks.md"
-      },
-      {
-        "name": "Settings",
-        "status": "pass",
-        "path": "docs/tests/06-settings.md"
-      },
-      {
-        "name": "Authentication",
-        "status": "pass",
-        "path": "docs/tests/07-authentication.md"
-      }
-    ]
-  },
+  "manual": null,
   "manual_history": []
 }

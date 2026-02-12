@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated": "2026-02-12T09:00:18.305Z",
-  "total": 13,
+  "generated": "2026-02-12T09:25:57.824Z",
+  "total": 16,
   "categories": [
     "daily",
     "features",
@@ -10,13 +10,58 @@
     "executive"
   ],
   "category_counts": {
-    "daily": 1,
+    "daily": 4,
     "features": 8,
     "bugs": 2,
     "security": 1,
     "executive": 1
   },
   "reports": [
+    {
+      "id": "daily-2026-02-12-macos-detailed",
+      "title": "macOS Test Report - Detailed Breakdown",
+      "category": "daily",
+      "date": "2026-02-12",
+      "path": "daily/2026-02-12-macos-detailed.md",
+      "file": "2026-02-12-macos-detailed.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "detailed",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
+    {
+      "id": "daily-2026-02-12-macos-report",
+      "title": "macOS Test Report",
+      "category": "daily",
+      "date": "2026-02-12",
+      "path": "daily/2026-02-12-macos-report.md",
+      "file": "2026-02-12-macos-report.md"
+    },
+    {
+      "id": "daily-2026-02-12-macos-summary",
+      "title": "macOS Test Report - Executive Summary",
+      "category": "daily",
+      "date": "2026-02-12",
+      "path": "daily/2026-02-12-macos-summary.md",
+      "file": "2026-02-12-macos-summary.md",
+      "tags": [
+        "macos",
+        "darwin",
+        "arm64",
+        "automated",
+        "0.1.4-80b9f15"
+      ],
+      "author": "Q (Automated)",
+      "status": "complete",
+      "build_version": "0.1.4-80b9f15"
+    },
     {
       "id": "daily-2026-02-12-macos",
       "title": "macOS Test Report - Executive Summary",
